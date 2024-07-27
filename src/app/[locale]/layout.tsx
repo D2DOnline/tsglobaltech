@@ -32,7 +32,8 @@ export default async function RootLayout({
   const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      {/* inter.className */}
+      <body className={""}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <Breadcrumb/>
