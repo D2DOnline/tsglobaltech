@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .footer {
+    @apply flex flex-col;
+  }
+
+  .footer-top {
+    @apply flex flex-row justify-between;
+  }
+
+  .footer-top-left {
+    @apply flex flex-row justify-between w-1/2;
+  }
+
+  .footer-top-left-col1,
+  .footer-top-left-col2 {
+    @apply flex flex-col justify-between w-1/2;
+  }
+
+  .footer-heading {
+    @apply text-black text-2xl text-fontHeadingColor;
+  }
+}

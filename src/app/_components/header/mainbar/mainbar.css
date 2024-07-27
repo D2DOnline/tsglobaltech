@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .mainbar {
+    @apply flex flex-row w-full;
+  }
+
+  .expended-nav-header{
+    @apply hidden md:flex md:flex-row md:justify-between;
+  }
+
+  .collapsed-nav-header{
+    @apply flex justify-center relative  md:hidden;
+  }
+
+  .cpllapsed-nav{
+    @apply absolute left-0;
+  }
+}

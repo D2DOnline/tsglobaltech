@@ -1,0 +1,21 @@
+import { SiteLogo } from "../site-logo/site-logo";
+import { MainMenu } from "../site-navigation/main-menu";
+
+import "./mainbar.css";
+
+export const Mainbar = () => {
+  return (
+    <>
+      <div className="mainbar expended-nav-header">
+        <SiteLogo/>
+        <MainMenu orientation="x" />
+      </div>
+      <div className="mainbar collapsed-nav-header">
+        <div className="cpllapsed-nav">
+          <MainMenu orientation="y" />
+        </div>
+        <SiteLogo/>
+      </div>
+    </>
+  );
+};

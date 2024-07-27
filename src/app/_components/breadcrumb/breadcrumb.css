@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bd-container {
+    @apply flex flex-row text-sm sticky top-16 md:top-24 h-[1.5rem] items-center z-30
+    bg-gradient-to-t from-indigo-200 via-[#ffffff] to-indigo-200;
+  }
+  .bd-list, .bd-seperator {
+    @apply pr-2;
+  }
+  .bd-active {
+    @apply text-[#1bb1dc];
+  }
+}

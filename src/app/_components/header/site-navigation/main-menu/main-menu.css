@@ -1,0 +1,48 @@
+@tailwind components;
+
+@layer components {
+
+  .menu-horizontal {
+    @apply flex flex-row justify-between items-center h-full;
+  }
+
+  .menu-horizontal li{
+    @apply mx-[0.5rem] text-brandColor;
+  }
+
+  .menu-vertical {
+    /* position: fixed;
+    top: 0;
+    left:0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    width: 100vh; */
+    @apply fixed inset-y-0 left-0 overflow-hidden w-screen z-10 w-screen
+    h-[100vh] duration-300 ease-in-out;
+  }
+
+  .menu-vertical ul {
+    @apply py-[60px] px-[40px] w-[250px] h-[100vh] bg-bodyColor;
+  }
+
+  .menu-vertical-hide {
+    @apply w-[0];
+  }
+
+  .menu-vertical-show {
+    @apply w-[100vh];
+  }
+
+  .menu-vertical li {
+    @apply py-[10px] px-[15px];
+  }
+
+  .menu-vertical li{
+    @apply text-brandColor;
+  }
+
+  .nevmenu > li > a.active {
+    @apply  border-b-2;
+  }
+}

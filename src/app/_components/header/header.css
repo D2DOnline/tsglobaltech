@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  header {
+    @apply flex flex-col justify-between w-full sticky top-0 z-40 bg-bodyColor h-16 md:h-24 border-b-2;
+  }
+}

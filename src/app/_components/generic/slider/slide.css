@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .slide {
+    @apply w-full justify-center hidden;
+  }
+
+.current-slide{
+  @apply flex flex-col;
+}
+
+  .heading {
+    @apply text-white text-6xl text-center;
+  }
+
+  .text {
+    @apply text-white text-2xl text-justify;
+  }
+
+  .slide-button{
+    @apply self-center;
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.3;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

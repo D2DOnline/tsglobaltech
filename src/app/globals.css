@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --bodyColor: hsl(0, 0%, 100%);
+    --fontRegularColor: hsl(252, 2%, 51%);
+    --fontHeadingColor: hsl(240, 3%, 15%);
+    --sectionBg:hsl(219,55%,95%,1);
+   
+
+    --baseOne: hsl(0, 0%, 100%);
+    --baseTwo: hsl(252, 2%, 51%);
+    --baseThree: hsl(0, 0%, 96%);
+    --baseFour: hsl(0, 0%, 100%);
+    --accent1: hsl(6, 100%, 80%);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brandColor: hsl(193, 78%, 48%, 1);
+      --bodyColor: hsl(229, 57%, 11%);
+      --fontRegularColor: hsl(252, 2%, 51%);
+      --fontHeadingColor: hsl(243, 100%, 93%);
+      --sectionBg:hsl(229,21%,13%,1);
+
+      --baseOne: hsl(229, 57%, 11%);
+      --baseTwo: hsl(243, 100%, 93%);
+      --baseThree: hsl(228, 56%, 26%);
+      --baseFour: hsl(229, 57%, 11%);
+      --accent1: hsl(6, 100%, 80%);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --bodyColor: hsl(229, 57%, 11%);
+    --fontRegularColor: hsl(252, 2%, 51%);
+    --fontHeadingColor: hsl(243, 100%, 93%);
+    --sectionBg:hsl(229,21%,13%,1);
+
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --baseOne: hsl(229, 57%, 11%);
+    --baseTwo: hsl(243, 100%, 93%);
+    --baseThree: hsl(228, 56%, 26%);
+    --baseFour: hsl(229, 57%, 11%);
+    --accent1: hsl(6, 100%, 80%);
+  }
+
+  :root[data-theme="light"] {
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --bodyColor: hsl(0, 0%, 100%);
+    --fontRegularColor: hsl(252, 2%, 51%);
+    --fontHeadingColor: hsl(240, 3%, 15%);
+    --sectionBg:hsl(219,55%,95%,1);
+
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --baseOne: hsl(0, 0%, 100%);
+    --baseTwo: hsl(252, 2%, 51%);
+    --baseThree: hsl(0, 0%, 96%);
+    --baseFour: hsl(0, 0%, 100%);
+    --accent1: hsl(6, 100%, 80%);
+  }
+
+  :root[data-theme="custom"] {
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --bodyColor: hsl(229, 44%, 50%, 1);
+    --fontRegularColor: hsl(252, 2%, 51%);
+    --fontHeadingColor: hsl(243, 100%, 93%);
+    --sectionBg:hsl(229,51%,19%,1);
+
+    --brandColor: hsl(193, 78%, 48%, 1);
+    --baseOne: hsl(167, 56%, 22%);
+    --baseTwo: hsl(140, 69%, 40%);
+    --baseThree: hsl(0, 0%, 0%);
+    --baseFour: hsl(0, 3%, 13%);
+    --accent1: hsl(6, 100%, 80%);
+  }
+}

@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .topbar {
+    @apply flex flex-row w-full pt-[10px];
+  }
+
+  .topbar .right-content {
+    @apply ml-auto flex flex-row;
+  }
+
+  .topbar .right-content li{
+    @apply mx-1 md:mx-2 text-fontRegularColor;
+  }
+}
