@@ -5,9 +5,9 @@ import nextIntl from "next-intl/plugin";
 // Your existing Next.js configuration
 const nextConfig = {
   basePath: "",
-  // output: "export",
-  // images: { unoptimized: true },
-  // reactStrictMode: true,
+  output: "export",
+  images: { unoptimized: true },
+  reactStrictMode: true,
 };
 
 // Use nextIntl to extend your configuration with the next-intl plugin
