@@ -1,3 +1,4 @@
+"use client";
 import { usePathname, useRouter } from "next/navigation";
 import { Dropdown } from "../../commom/dropdown/dropdown";
 import { dropdownItem } from "../../commom/dropdown/interface";

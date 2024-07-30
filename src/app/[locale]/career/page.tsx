@@ -1,3 +1,5 @@
+"use client";
+
 import { Career } from "@/app/_components/career/career";
 import { PageHeader } from "@/app/_components/page-header/page-header";
 import { lc } from "@/app/language-content/iLanguageContent";
