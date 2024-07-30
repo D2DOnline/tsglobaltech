@@ -23,6 +23,8 @@ export interface iLanguageContent {
   common_address_country:string;
   common_phone:string;
   common_email:string;
+  common_cookies_info:string;
+  common_close:string;
 
 
   site_navigation_home: string;

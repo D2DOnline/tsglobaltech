@@ -45,7 +45,7 @@ export const Topbar = () => {
 
   return (
     <>
-      <div className="topbar">
+      <div className="topbar body-content">
        
         <ul className="right-content">
         <li>
@@ -60,7 +60,7 @@ export const Topbar = () => {
           <li>
             <FaYoutube />
           </li>
-          <li className="opacity-[0.15]">
+          <li className="opacity-[0.25]">
             <FaGripLinesVertical/>
           </li>
           <li>

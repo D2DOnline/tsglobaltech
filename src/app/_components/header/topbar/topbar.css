@@ -4,14 +4,14 @@
 
 @layer components {
   .topbar {
-    @apply flex flex-row w-full pt-[10px];
+    @apply flex flex-row w-full py-[7px] bg-bodyColor items-center;
   }
 
   .topbar .right-content {
-    @apply ml-auto flex flex-row;
+    @apply ml-auto flex flex-row items-center;
   }
 
   .topbar .right-content li{
-    @apply mx-1 md:mx-2 text-fontRegularColor;
+    @apply mx-1 md:mx-2 text-bodyBgColor text-[1rem];
   }
 }

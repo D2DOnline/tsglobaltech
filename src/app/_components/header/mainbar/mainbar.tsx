@@ -6,7 +6,7 @@ import "./mainbar.css";
 export const Mainbar = () => {
   return (
     <>
-      <div className="mainbar expended-nav-header">
+      <div className="mainbar body-content expended-nav-header">
         <SiteLogo/>
         <MainMenu orientation="x" />
       </div>

@@ -9,6 +9,8 @@ export const content: iLanguageContent = {
   common_address_country: "India",
   common_phone: "Phone",
   common_email: "Email",
+  common_cookies_info:"This website uses cookies to store some data for better performance and your preferences, by continuing to browse our website, you consent to our use of cookies.",
+  common_close:"Close",
 
   site_navigation_home: "Home",
   site_navigation_services: "Services",

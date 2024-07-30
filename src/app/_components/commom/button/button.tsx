@@ -12,5 +12,5 @@ export const TSGT_Button = ({ text, onClick, link }: props) => {
       {text}
     </button>
   ;
-  return <>{link ? <TSGT_Link url={link}>{btn}</TSGT_Link> : {btn}}</>;
+  return <>{link ? <TSGT_Link url={link}>{btn}</TSGT_Link> : <>{btn}</>}</>;
 };

@@ -57,7 +57,7 @@ export const Dropdown = ({ label, dropdownItems, onSelectedItem }: props) => {
       <div ref={dropdownRef} className="relative">
         <span
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="text-baseTwo text-xs cursor-pointer"
+          className="cursor-pointer"
         >
           <div className="hidden md:flex">{label.text}</div>
           <div className="flex md:hidden">{label.icon}</div>

@@ -7,8 +7,13 @@
     @apply m-0 p-0;
   }
 
+  html{
+    @apply font-["verdon"] font-["verdana"] leading-normal text-xs;
+  }
+  
+
   body {
-    @apply flex flex-col w-screen bg-bodyColor font-["verdon"];
+    @apply flex flex-col w-screen bg-bodyBgColor text-bodyColor;
   }
 
   p {

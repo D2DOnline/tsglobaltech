@@ -15,23 +15,30 @@ export const MenuItems = ({ containerStyle, onClose, isVertical }: props) => {
   const t = useTranslations();
   const [cStyle, setCStyle] = useState(containerStyle);
 
-  const pathname = usePathname();
+  const pathName = usePathname();
+
+  const isActiveMenuItem=(item:string,pathName:string)=>{
+    const currentRoutes = pathName.split('/');
+    if((currentRoutes[currentRoutes.length-1] === item))
+      return true;
+    return false;
+  }
 
   const listItems: React.JSX.Element = (
     <>
-      <li className="active">
+      <li className={`menu-item ${isActiveMenuItem('',pathName)?"menu-item-active":""}`}>
         <TSGT_Link url="/">{t(lc.site_navigation_home)}</TSGT_Link>
       </li>
-      <li>
+      <li className={`menu-item ${isActiveMenuItem('services',pathName)?"menu-item-active":""}`}>
         <TSGT_Link url="/services">{t(lc.site_navigation_services)}</TSGT_Link>
       </li>
-      <li>
+      <li className={`menu-item ${isActiveMenuItem('career',pathName)?"menu-item-active":""}`}>
         <TSGT_Link url="/career">{t(lc.site_navigation_career)}</TSGT_Link>
       </li>
-      <li>
+      <li className={`menu-item ${isActiveMenuItem('about',pathName)?"menu-item-active":""}`}>
         <TSGT_Link url="/about">{t(lc.site_navigation_about_us)}</TSGT_Link>
       </li>
-      <li>
+      <li className={`menu-item ${isActiveMenuItem('contact-us',pathName)?"menu-item-active":""}`}>
         <TSGT_Link url="#footer">{t(lc.site_navigation_contact_us)}</TSGT_Link>
       </li>
     </>

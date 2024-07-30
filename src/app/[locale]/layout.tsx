@@ -11,6 +11,7 @@ import { Header } from "../_components/header/header";
 import { Footer } from "../_components/footer/footer";
 import { CopyrightInfo } from "../_components/copyright-info/copyright-info";
 import { Breadcrumb } from "../_components/breadcrumb/breadcrumb";
+import { CookiesInfo } from "../_components/commom/cookie-info/cookies-info";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,6 +41,7 @@ export default async function RootLayout({
           {children}
           <Footer />
           <CopyrightInfo />
+          <CookiesInfo/>
         </NextIntlClientProvider>
       </body>
     </html>

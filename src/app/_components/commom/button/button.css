@@ -4,6 +4,6 @@
 
 @layer components {
   .button {
-    @apply bg-brandColor py-2 px-10 text-white text-2xl w-max;
+    @apply bg-brandColor py-2 px-10 text-white text-2xl w-max rounded-lg hover:border-b-2 cursor-pointer;
   }
 }
