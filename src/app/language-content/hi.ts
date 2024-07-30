@@ -3,6 +3,12 @@ import { iLanguageContent } from "./iLanguageContent";
 export const content: iLanguageContent = {
   common_theme: "थीम",
   common_language: "भाषा",
+  common_address_line_1: "लॉजिक्स साइबर पार्क",
+  common_address_line_2: "सेक्टर 62",
+  common_address_city: "नोएडा",
+  common_address_country: "भारत",
+  common_phone:"फ़ोन",
+  common_email:"ईमेल",
 
   site_navigation_home: "घर",
   site_navigation_services: "सेवा",
@@ -10,19 +16,111 @@ export const content: iLanguageContent = {
   site_navigation_career: "आजीविका",
   site_navigation_contact_us: "संपर्क करें",
 
-  banner_slide_1_heading:"टीएस ग्लोबल टेक में आपका स्वागत है",
-  banner_slide_1_text:"A pioneering tech startup dedicated to crafting innovative web, desktop and mobile solutions, uniquely powered by advanced artificial intelligence",
-  banner_slide_1_button_text:"Explore more...",
+  banner_slide_1_heading: "टीएस ग्लोबल टेक में आपका स्वागत है",
+  banner_slide_1_text:
+    "उन्नत कृत्रिम बुद्धिमत्ता द्वारा विशिष्ट रूप से संचालित, नवीन वेब, डेस्कटॉप और मोबाइल समाधान तैयार करने के लिए समर्पित एक अग्रणी तकनीकी स्टार्टअप",
+  banner_slide_1_button_text: "और ज्यादा खोजें...",
 
-  banner_slide_2_heading:"विभिन्न प्रकार के s/w विकास",
-  banner_slide_2_text:"AI/ML, Web Developmet, Desktop and Mobile app",
-  banner_slide_2_button_text:"Our Services",
+  banner_slide_2_heading: "विभिन्न प्रकार के s/w विकास",
+  banner_slide_2_text: "एआई/एमएल, वेब डेवलपमेंट, डेस्कटॉप और मोबाइल ऐप",
+  banner_slide_2_button_text: "हमारी सेवाएँ",
 
-  banner_slide_3_heading:"हमारे साथ उज्ज्वल करियर",
-  banner_slide_3_text:"Join us for a brighter career with us",
-  banner_slide_3_button_text:"Search Job",
+  banner_slide_3_heading: "हमारे साथ उज्ज्वल करियर",
+  banner_slide_3_text: "उज्जवल करियर के लिए हमसे जुड़ें",
+  banner_slide_3_button_text: "नौकरी खोजें",
 
-  banner_slide_4_heading:"ग्राहक केंद्रित",
-  banner_slide_4_text:"A pioneering startup dedicated to revolutionizing the digital landscape through cutting-edge web and mobile solutions powered by Artificial Intelligence (AI)",
-  banner_slide_4_button_text:"Know more about us",
+  banner_slide_4_heading: "ग्राहक केंद्रित",
+  banner_slide_4_text:
+    "आर्टिफिशियल इंटेलिजेंस (एआई) द्वारा संचालित अत्याधुनिक वेब और मोबाइल समाधानों के माध्यम से डिजिटल परिदृश्य में क्रांति लाने के लिए समर्पित एक अग्रणी स्टार्टअप",
+  banner_slide_4_button_text: "हमारे बारे में और जानें",
+
+  about_page_heading:"हम कौन हैं?",
+  about_heading: "हमारे बारे में",
+  about_sub_heading_1: "कंपनी ओवरव्यू",
+  about_sub_heading_1_text: `"टेक्नोलॉजी टू सर्व" एक अग्रणी तकनीकी स्टार्टअप है जो समर्पित है
+            अत्याधुनिक वेब के माध्यम से डिजिटल परिदृश्य में क्रांति लाना
+            आर्टिफिशियल इंटेलिजेंस (एआई) द्वारा संचालित मोबाइल समाधान। पर
+            नवाचार और प्रौद्योगिकी के प्रतिच्छेदन के साथ, हम डिज़ाइन को मिलाते हैं
+            समाधान तैयार करने के लिए सोच, डेटा विज्ञान और मजबूत इंजीनियरिंग
+            जो न केवल हमारे ग्राहकों की अपेक्षाओं को पूरा करता है बल्कि उससे भी बढ़कर है.`,
+
+  about_sub_heading_2: "हमारा विशेष कार्य",
+  about_sub_heading_2_text: `हमारा मिशन एआई की विशाल क्षमता का उपयोग करके परिणाम देना है
+            स्केलेबल, कुशल और बुद्धिमान वेब और मोबाइल एप्लिकेशन
+            जो व्यवसायों को अपने लक्ष्य प्राप्त करने के लिए सशक्त बनाता है। हम बनाने का प्रयास करते हैं
+            उपयोगकर्ता-केंद्रित समाधान जो परिचालन दक्षता को बढ़ाते हैं, बढ़ाते हैं
+            ग्राहक अनुभव, और डिजिटल परिवर्तन को उत्प्रेरित करना।`,
+
+  about_sub_heading_3: "हमारा नज़रिया",
+  about_sub_heading_3_text: `एआई-संचालित वेब और मोबाइल समाधानों में वैश्विक नेता बनना,
+            ऐसे भविष्य को बढ़ावा देना जहां प्रौद्योगिकी आधारशिला के रूप में कार्य करे
+            नवाचार, विकास और कनेक्टिविटी`,
+
+  about_sub_heading_4: "बुनियादी मूल्य",
+  about_sub_heading_4_head_text_1: "नवाचार:",
+  about_sub_heading_4_text_1: `जो संभव है उसकी सीमाओं को लगातार आगे बढ़ाते रहना
+            एआई और आधुनिक तकनीक के माध्यम से।`,
+  about_sub_heading_4_head_text_2: "उत्कृष्टता:",
+  about_sub_heading_4_text_2: `उच्चतम गुणवत्ता वाले समाधान देने के लिए प्रतिबद्ध
+            सटीकता और विशेषज्ञता के साथ।`,
+  about_sub_heading_4_head_text_3: "ग्राहक केंद्रित:",
+  about_sub_heading_4_text_3: `हमारी जरूरतों और सफलता को प्राथमिकता देना
+            हमारे प्रत्येक प्रोजेक्ट में ग्राहक।`,
+  about_sub_heading_4_head_text_4: "अखंडता:",
+  about_sub_heading_4_text_4: `पेशेवर नैतिकता के उच्चतम मानकों को कायम रखना
+            और पारदर्शिता`,
+  about_sub_heading_4_head_text_5: "सहयोग",
+  about_sub_heading_4_text_5: `टीम वर्क और साझेदारी की संस्कृति को बढ़ावा देना
+            सामूहिक सफलता प्राप्त करें.`,
+
+  whyUs_heading: "हमें क्यों चुनें?",
+  whyUs_sub_heading_head_text_1: "विशेषज्ञता",
+  whyUs_sub_heading_text_1: `हमारी टीम में व्यापक रूप से उद्योग के दिग्गज शामिल हैं
+                      एआई, वेब और मोबाइल प्रौद्योगिकियों में अनुभव।`,
+  whyUs_sub_heading_head_text_2: "नवाचार",
+  whyUs_sub_heading_text_2: `हम लगातार एकीकरण करके सबसे आगे रहते हैं
+                      एआई और प्रौद्योगिकी में नवीनतम प्रगति।`,
+  whyUs_sub_heading_head_text_3: "अनुकूलन",
+  whyUs_sub_heading_text_3: `हमारे समाधान विशिष्ट आवश्यकताओं को पूरा करने के लिए तैयार किए गए हैं
+                      आपके व्यवसाय की आवश्यकताएँ और लक्ष्य।`,
+  whyUs_sub_heading_head_text_4: "विश्वसनीयता",
+  whyUs_sub_heading_text_4: `हम परियोजनाओं को समय पर पूरा करने के लिए प्रतिबद्ध हैं
+                      बजट के भीतर, गुणवत्ता से समझौता किए बिना।`,
+  whyUs_sub_heading_head_text_5: "सहायता",
+  whyUs_sub_heading_text_5: `ग्राहकों के साथ हमारा संबंध परियोजना से परे है
+                      पूरा करना, निरंतर समर्थन और रखरखाव की पेशकश करना।`,
+services_page_heading: "हम क्या सेवा करते हैं?",
+  services_heading: "सेवाएं",
+  services_sub_heading_head_text_1: "एआई-संचालित वेब समाधान",
+  services_sub_heading_text_1: `
+कुशल पेशेवरों की हमारी टीम एआई-एकीकृत डिजाइन और विकास करती है
+            वेब एप्लिकेशन जो आपकी विशिष्ट मांगों के अनुरूप बनाए गए हैं
+            व्यापार। एआई का लाभ उठाकर, हम अधिक स्मार्ट, अधिक सहज उपयोगकर्ता को सक्षम बनाते हैं
+            ऐसे अनुभव जो उपयोगकर्ता के व्यवहार के अनुकूल होते हैं और वैयक्तिकृत प्रदान करते हैं
+            इंटरैक्शन.
+`,
+  services_sub_heading_head_text_2: "मोबाइल एप्लिकेशन विकास",
+  services_sub_heading_text_2: `हमारे उन्नत विश्लेषण और डेटा के साथ डेटा की शक्ति का उपयोग करें
+            विज्ञान सेवाएँ. हम कच्चे डेटा को कार्रवाई योग्य अंतर्दृष्टि में बदलते हैं,
+            व्यवसायों को सूचित निर्णय लेने, रुझानों की भविष्यवाणी करने के लिए सशक्त बनाना,
+            और संचालन को अनुकूलित करें।`,
+  services_sub_heading_head_text_3: "डेटा साइंस और एनालिटिक्स",
+  services_sub_heading_text_3: `एआई-संचालित वेब और मोबाइल समाधानों में वैश्विक नेता बनना,
+            ऐसे भविष्य को बढ़ावा देना जहां प्रौद्योगिकी आधारशिला के रूप में कार्य करे
+            नवाचार, विकास और कनेक्टिविटी।`,
+  services_sub_heading_head_text_4: "उपयोगकर्ता अनुभव (यूएक्स) डिज़ाइन",
+  services_sub_heading_text_4: `हमारे यूएक्स डिजाइनर सहज, उपयोगकर्ता-अनुकूल बनाने में माहिर हैं
+            इंटरफ़ेस जो नवीनतम डिज़ाइन रुझानों और उपयोगकर्ता के साथ संरेखित होते हैं
+            अपेक्षाएं। उपयोगकर्ता को हमारे डिज़ाइन के केंद्र में रखकर
+            प्रक्रिया, हम सुनिश्चित करते हैं कि प्रत्येक बातचीत सार्थक हो और
+            प्रभावशाली.`,
+
+  footer_sub_heading_head_text_1: "टीएस ग्लोबल टेक",
+  footer_sub_heading_text_1: ` एक समर्पित अग्रणी टेक स्टार्टअप है
+                        विशिष्ट रूप से नवीन वेब, डेस्कटॉप और मोबाइल समाधान तैयार करने के लिए
+                        उन्नत कृत्रिम बुद्धिमत्ता द्वारा संचालित।`,
+  footer_sub_heading_head_text_2: "उपयोगी कड़ियां",
+  footer_sub_heading_head_text_3: "संपर्क करें",
+
+  career_page_heading: "टीएस ग्लोबल टेक से जुड़ें",
 };

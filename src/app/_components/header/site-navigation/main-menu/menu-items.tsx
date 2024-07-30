@@ -1,5 +1,5 @@
 "use client";
-import { TSGT_Link } from "@/app/_components/generic/Link/link";
+import { TSGT_Link } from "@/app/_components/commom/Link/link";
 import { lc } from "@/app/language-content/iLanguageContent";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
@@ -26,13 +26,13 @@ export const MenuItems = ({ containerStyle, onClose, isVertical }: props) => {
         <TSGT_Link url="/services">{t(lc.site_navigation_services)}</TSGT_Link>
       </li>
       <li>
-        <TSGT_Link url="/career" >{t(lc.site_navigation_career)}</TSGT_Link>
+        <TSGT_Link url="/career">{t(lc.site_navigation_career)}</TSGT_Link>
       </li>
       <li>
-        <TSGT_Link url="/about" >{t(lc.site_navigation_about_us)}</TSGT_Link>
+        <TSGT_Link url="/about">{t(lc.site_navigation_about_us)}</TSGT_Link>
       </li>
       <li>
-        <TSGT_Link url="#footer" >{t(lc.site_navigation_contact_us)}</TSGT_Link>
+        <TSGT_Link url="#footer">{t(lc.site_navigation_contact_us)}</TSGT_Link>
       </li>
     </>
   );

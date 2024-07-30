@@ -1,4 +1,4 @@
-import { Copyright } from "../generic/copyright/copyright";
+import { Copyright } from "../commom/copyright/copyright";
 
 export const CopyrightInfo = () => {
   return (

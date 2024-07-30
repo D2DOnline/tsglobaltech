@@ -1,8 +1,11 @@
-
-import { TSGT_Link } from "../generic/Link/link";
+"use client";
+import { useTranslations } from "next-intl";
+import { TSGT_Link } from "../commom/Link/link";
 import "./footer.css";
+import { lc } from "@/app/language-content/iLanguageContent";
 
 export const Footer = () => {
+  const t = useTranslations();
   return (
     <>
       <footer
@@ -13,12 +16,8 @@ export const Footer = () => {
           {/* <div className="footer-top-left"> */}
           {/* <div className="pr-10"> */}
           <div className="py-0.5 md:w-1/3">
-            <div className="footer-heading">TS Global Tech.</div>
-            <p>
-            &apos;TS Global Tech&apos; is a pioneering tech startup dedicated to
-              crafting innovative web, desktop and mobile solutions, uniquely
-              powered by advanced artificial intelligence.
-            </p>
+            <div className="footer-heading">{t(lc.footer_sub_heading_head_text_1)} </div>
+            <p>&apos;{t(lc.footer_sub_heading_head_text_1)}&apos;</p>{t(lc.footer_sub_heading_text_1)}
           </div>
 
           {/* <div className="footer-newsletter py-0.5">
@@ -31,13 +30,16 @@ export const Footer = () => {
               </div> */}
           {/* </div> */}
           <div className="py-0.5 md:w-1/3">
-            <div className="footer-heading">Useful Links</div>
+            <div className="footer-heading">{t(lc.footer_sub_heading_head_text_2)}</div>
             <ul className="text-fontRegularColor">
               <li>
-                <TSGT_Link url="/services" >Services</TSGT_Link>
+                <TSGT_Link url="/services">{t(lc.site_navigation_services)}</TSGT_Link>
               </li>
               <li>
-              <TSGT_Link url="/career" >Career</TSGT_Link>
+                <TSGT_Link url="/career">{t(lc.site_navigation_career)}</TSGT_Link>
+              </li>
+              <li>
+                <TSGT_Link url="/career">{t(lc.site_navigation_about_us)}</TSGT_Link>
               </li>
             </ul>
           </div>
@@ -45,15 +47,17 @@ export const Footer = () => {
           {/* <div className="footer-top-left-col2"> */}
 
           <div className="py-0.5 md:1/3">
-            <div className="footer-heading">Contact Us</div>
+            <div className="footer-heading">{t(lc.footer_sub_heading_head_text_3)}</div>
             <p>
-              Logix Cyber Park <br />
-              Sector-62, Noida
+            {t(lc.common_address_line_1)}
               <br />
-              India <br />
-              <strong>Phone:</strong> +91 9355510301
+              {t(lc.common_address_line_2)}, {t(lc.common_address_city)}
               <br />
-              <strong>Email:</strong> team@tsglobaltech.com
+              {t(lc.common_address_country)}
+              <br />
+              <strong>{t(lc.common_phone)}:</strong> +91 9355510301
+              <br />
+              <strong>{t(lc.common_email)}:</strong> sales@tsglobaltech.com
               <br />
             </p>
           </div>

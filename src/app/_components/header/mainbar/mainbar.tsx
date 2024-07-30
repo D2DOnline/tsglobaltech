@@ -1,4 +1,4 @@
-import { SiteLogo } from "../site-logo/site-logo";
+import { SiteLogo } from "@/app/_components/site-logo/site-logo";
 import { MainMenu } from "../site-navigation/main-menu";
 
 import "./mainbar.css";

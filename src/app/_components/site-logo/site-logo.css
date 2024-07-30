@@ -1,0 +1,27 @@
+@tailwind components;
+
+@layer components {
+  .logo-svg {
+    @apply fill-transparent h-12 md:h-16;
+  }
+
+  .logo-traingle-1,
+  .logo-traingle-2,
+  .logo-traingle-3 {
+    @apply fill-brandColor;
+  }
+
+  .logo-text-main {
+    @apply fill-fontHeadingColor
+        text-[260px] 
+        translate-x-[658px] 
+        translate-y-[829px];
+  }
+
+  .logo-text-base {
+    @apply fill-fontHeadingColor
+        text-[230px] 
+        translate-x-[120px] 
+        translate-y-[1060px];
+  }
+}

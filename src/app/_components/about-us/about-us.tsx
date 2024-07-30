@@ -1,59 +1,53 @@
+"use client";
+
+import { lc } from "@/app/language-content/iLanguageContent";
+import { useTranslations } from "use-intl";
+
 export const AboutUs = () => {
+  const t = useTranslations();
   return (
     <>
       <section id="about" className="body-content">
-        <div className="section-header">About Us</div>
+        <div className="section-header">{t(lc.about_heading)}</div>
 
         <div className="section-content flex flex-col">
-          <div className="section-content-header">Company Overview</div>
-          <p>
-            Technology To Serve is a pioneering tech startup dedicated to
-            revolutionizing the digital landscape through cutting-edge web and
-            mobile solutions powered by Artificial Intelligence (AI). At the
-            intersection of innovation and technology, we amalgamate design
-            thinking, data science, and robust engineering to craft solutions
-            that not only meet but exceed the expectations of our clients.
-          </p>
+          <div className="section-content-header">
+            {t(lc.about_sub_heading_1)}
+          </div>
+          <p>{t(lc.about_sub_heading_1_text)}</p>
 
-          <div className="section-content-header">Our Mission</div>
-          <p>
-            Our mission is to harness the vast potential of AI to deliver
-            scalable, efficient, and intelligent web and mobile applications
-            that empower businesses to achieve their goals. We strive to create
-            user-centric solutions that drive operational efficiency, enhance
-            customer experiences, and catalyze digital transformation.
-          </p>
+          <div className="section-content-header">
+            {t(lc.about_sub_heading_2)}
+          </div>
+          <p>{t(lc.about_sub_heading_2_text)}</p>
 
-          <div className="section-content-header">Our Vision</div>
-          <p>
-            To be a global leader in AI-driven web and mobile solutions,
-            fostering a future where technology serves as a cornerstone for
-            innovation, growth, and connectivity.
-          </p>
+          <div className="section-content-header">
+            {t(lc.about_sub_heading_3)}
+          </div>
+          <p>{t(lc.about_sub_heading_3_text)}</p>
 
-          <div className="section-content-header">Core Values</div>
+          <div className="section-content-header">
+            {t(lc.about_sub_heading_4)}
+          </div>
           <p>
-            {" "}
-            Innovation: Constantly pushing the boundaries of what is possible
-            through AI and modern technology.
+            <strong>{t(lc.about_sub_heading_4_head_text_1)}</strong>{" "}
+            {t(lc.about_sub_heading_4_text_1)}
           </p>
           <p>
-            {" "}
-            Excellence: Committed to delivering the highest quality solutions
-            with precision and expertise.
+            <strong>{t(lc.about_sub_heading_4_head_text_2)}</strong>{" "}
+            {t(lc.about_sub_heading_4_text_2)}
           </p>
           <p>
-            Customer-Centricity: Prioritizing the needs and success of our
-            clients in every project we undertake.
+            <strong>{t(lc.about_sub_heading_4_head_text_3)}</strong>{" "}
+            {t(lc.about_sub_heading_4_text_3)}
           </p>
           <p>
-            {" "}
-            Integrity: Upholding the highest standards of professional ethics
-            and transparency.
+            <strong>{t(lc.about_sub_heading_4_head_text_4)}</strong>{" "}
+            {t(lc.about_sub_heading_4_text_4)}
           </p>
           <p>
-            Collaboration: Fostering a culture of teamwork and partnership to
-            achieve collective success.
+            <strong>{t(lc.about_sub_heading_4_head_text_5)}</strong>{" "}
+            {t(lc.about_sub_heading_4_text_5)}
           </p>
         </div>
       </section>

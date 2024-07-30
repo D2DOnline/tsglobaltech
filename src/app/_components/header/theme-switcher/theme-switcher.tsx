@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Dropdown } from "../../generic/dropdown/dropdown";
+import { Dropdown } from "../../commom/dropdown/dropdown";
 import { useTranslations } from "next-intl";
 
 import { lc } from "@/app/language-content/iLanguageContent";
