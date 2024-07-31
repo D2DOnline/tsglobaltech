@@ -44,14 +44,18 @@
     @apply bg-sectionBg;
   }
   .section-header {
-    @apply text-center text-4xl text-fontHeadingColor;
+    @apply text-center text-[3rem] text-fontHeadingColor;
   }
 
   .section-content-header {
-    @apply py-5 text-2xl text-fontHeadingColor;
+    @apply py-5 text-[2rem] text-fontHeadingColor;
+  }
+
+  .section-content p {
+    @apply text-[1.5rem];
   }
 
   .page-heading {
-    @apply text-white text-4xl;
+    @apply text-white text-[3rem];
   }
 }

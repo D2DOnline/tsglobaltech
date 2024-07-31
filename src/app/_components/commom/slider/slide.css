@@ -13,11 +13,11 @@
 }
 
   .heading {
-    @apply text-white text-6xl text-center;
+    @apply text-white text-[5rem] text-center;
   }
 
   .text {
-    @apply text-white text-2xl text-justify;
+    @apply text-white text-[2rem] text-justify;
   }
 
   .slide-button{

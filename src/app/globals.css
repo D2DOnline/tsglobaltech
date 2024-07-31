@@ -45,7 +45,7 @@
     --brandColor: hsl(193, 78%, 48%, 1);
     --bodyColor: hsl(229, 44%, 50%, 1);
     --fontRegularColor: hsl(252, 2%, 51%);
-    --fontHeadingColor: hsl(243, 100%, 93%);
+    --fontHeadingColor: hsl(229, 44%, 50%, 1);
     --sectionBg: hsl(229, 51%, 19%, 1);
   }
 }

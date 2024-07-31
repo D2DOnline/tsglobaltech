@@ -3,7 +3,7 @@
 @layer components {
   .cookie-info-wrapper {
     @apply flex justify-between
-        absolute bottom-0 sticky bg-bodyBgColor p-5 text-[1.5rem] text-bodyColor border-t-2;
+        absolute bottom-0 sticky bg-bodyBgColor p-5 text-[1.2rem] text-bodyColor border-t-2;
   }
   .cookie-info {
     @apply w-[80%] px-2;

@@ -1,9 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "../globals.css";
 import "./layout.css";
 
-import {locales} from '../../locale-config';
+import { locales } from "../../locale-config";
 
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
@@ -12,12 +10,12 @@ import { Footer } from "../_components/footer/footer";
 import { CopyrightInfo } from "../_components/copyright-info/copyright-info";
 import { Breadcrumb } from "../_components/breadcrumb/breadcrumb";
 import { CookiesInfo } from "../_components/commom/cookie-info/cookies-info";
-
-const inter = Inter({ subsets: ["latin"] });
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "TS Global Tech",
-  description: "Technology to serve",
+  description: "A leading IT company",
+  keywords: ["Software", "Website", "Mobile app"],
 };
 
 interface RootLayoutProps {
@@ -37,11 +35,11 @@ export default async function RootLayout({
       <body className={""}>
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <Breadcrumb/>
+          <Breadcrumb />
           {children}
           <Footer />
           <CopyrightInfo />
-          <CookiesInfo/>
+          <CookiesInfo />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -4,13 +4,13 @@
 
 @layer components {
   .bd-container {
-    @apply flex flex-row text-sm sticky top-16 md:top-24 h-[1.5rem] items-center z-30
-    bg-gradient-to-t from-indigo-200 via-[#ffffff] to-indigo-200;
+    @apply flex flex-row text-[1.2rem] sticky top-[5.5rem] md:top-28 h-[1.5rem] items-center z-30 bg-gray-200 border-b-2
+   ;
   }
   .bd-list, .bd-seperator {
     @apply pr-2;
   }
   .bd-active {
-    @apply text-[#1bb1dc];
+    @apply text-brandColor;
   }
 }
