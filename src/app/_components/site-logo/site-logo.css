@@ -2,7 +2,7 @@
 
 @layer components {
   .logo-svg {
-    @apply fill-transparent h-12 md:h-16;
+    @apply fill-transparent h-12 md:h-14;
   }
 
   .logo-traingle-1,

@@ -10,8 +10,8 @@ export const Mainbar = () => {
         <SiteLogo/>
         <MainMenu orientation="x" />
       </div>
-      <div className="mainbar collapsed-nav-header">
-        <div className="cpllapsed-nav">
+      <div className="mainbar body-content collapsed-nav-header">
+        <div className="cpllapsed-nav h-[2.5rem]">
           <MainMenu orientation="y" />
         </div>
         <SiteLogo/>

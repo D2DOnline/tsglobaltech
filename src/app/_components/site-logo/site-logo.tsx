@@ -5,7 +5,7 @@ export const SiteLogo = () => {
   return (
     <>
       <TSGT_Link url="/">
-        <div className="-mt-[10px] md: mt-0">
+        <div className="flex items-center">
           <svg
             version="1.1"
             viewBox="0 0 1259 1160"
@@ -29,10 +29,11 @@ export const SiteLogo = () => {
               className="logo-traingle-3"
             />
 
-            <text className="logo-text-main">T S</text>
+            {/* <text className="logo-text-main">T S</text>
 
-            <text className="logo-text-base">global tech</text>
+            <text className="logo-text-base">global tech</text> */}
           </svg>
+          <span className="text-brandColor text-3xl">TS Global Tech</span>
         </div>
       </TSGT_Link>
     </>

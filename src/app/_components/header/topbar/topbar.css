@@ -12,6 +12,6 @@
   }
 
   .topbar .right-content li{
-    @apply mx-1 md:mx-2 text-bodyBgColor text-[1rem];
+    @apply mx-2 md:mx-3 text-bodyBgColor text-[1rem];
   }
 }
