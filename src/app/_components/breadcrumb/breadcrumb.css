@@ -4,7 +4,7 @@
 
 @layer components {
   .bd-container {
-    @apply flex flex-row text-[1.2rem] sticky top-[5.5rem] md:top-28 h-[1.5rem] items-center z-30 bg-gray-200 border-b-2
+    @apply flex flex-row text-[1.2rem] sticky top-[5.5rem] md:top-28 h-[1.5rem] items-center z-30 bg-boxBg border-b-2
    ;
   }
   .bd-list, .bd-seperator {

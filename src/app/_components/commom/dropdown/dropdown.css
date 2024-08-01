@@ -1,0 +1,38 @@
+@tailwind components;
+
+@layer components {
+  .dropdown-box {
+    @apply bg-boxBg absolute right-0 min-w-32 z-10 p-1 mt-[8px] rounded-lg shadow-3xl;
+  }
+
+  .language-icon {
+    @apply h-[1.5rem] w-auto;
+  }
+
+  /* .dropdown-box:before{
+        content: "";
+        position: absolute;
+        border-color: grey;
+        border: solid transparent;
+        border-bottom-color: white;
+        border-width: 11px;
+        margin-left:-10px;
+        top:-20px;
+        right:-1px;
+        z-index: 1000;
+    } */
+  /* .dropdown-box::after{
+        content: "";
+        position: absolute;
+        border-color: aliceblue;
+        border: solid transparent;
+        border-bottom-color:grey;
+        border-width: 10px;
+        margin-left:-10px;
+        top:-20px;
+        right:0px;
+        width: 0;
+        height: 0;
+        z-index: 100;
+    } */
+}

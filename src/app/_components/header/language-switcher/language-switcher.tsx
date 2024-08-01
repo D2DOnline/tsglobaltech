@@ -26,7 +26,7 @@ export const LanguageSwitcher = () => {
   return (
     <>
       <Dropdown
-        label={{ text: t(lc.common_language), icon: <FaLanguage /> }}
+        label={{ text: t(lc.common_language), icon: <FaLanguage className="language-icon"/> }}
         dropdownItems={languages}
         onSelectedItem={onLanguageChange}
       />

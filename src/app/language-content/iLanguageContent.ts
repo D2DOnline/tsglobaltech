@@ -102,5 +102,10 @@ export interface iLanguageContent {
   footer_sub_heading_head_text_3: string;
 
   career_page_heading: string;
+  career_option_AI_ML_heading:string;
+  career_option_web_heading:string;
+  career_option_mobile_heading:string;
+  career_option_not_open_position_message:string;
+
 
 }

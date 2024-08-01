@@ -7,9 +7,9 @@
     --brandColor: hsl(193, 78%, 48%, 1);
     --bodyBgColor: #fff;
     --bodyColor: #262626;
-    --fontRegularColor: hsl(252, 2%, 51%);
-    --fontHeadingColor: hsl(240, 1.05%, 23.89%);
+
     --sectionBg: hsl(219, 55%, 95%, 1);
+    --boxBg:#e9e0e0;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -17,9 +17,9 @@
       --brandColor: hsl(193, 78%, 48%, 1);
       --bodyBgColor: #262626;
       --bodyColor: #fff;
-      --fontRegularColor: hsl(252, 2%, 51%);
-      --fontHeadingColor: hsl(243, 100%, 93%);
+
       --sectionBg: hsl(229, 21%, 13%, 1);
+      --boxBg:#3d3b3b;
     }
   }
 
@@ -27,25 +27,27 @@
     --brandColor: hsl(193, 78%, 48%, 1);
     --bodyBgColor: #262626;
     --bodyColor: #fff;
-    --fontRegularColor: hsl(252, 2%, 51%);
-    --fontHeadingColor: hsl(243, 100%, 93%);
+
     --sectionBg: hsl(229, 21%, 13%, 1);
+    --boxBg:#3d3b3b;
   }
 
   :root[data-theme="light"] {
     --brandColor: hsl(193, 78%, 48%, 1);
     --bodyBgColor: #fff;
     --bodyColor: #262626;
-    --fontRegularColor: hsl(252, 2%, 51%);
-    --fontHeadingColor: hsl(240, 1.05%, 23.89%);
+
     --sectionBg: hsl(219, 55%, 95%, 1);
+    --boxBg:#e9e0e0;
   }
+  
 
   :root[data-theme="custom"] {
     --brandColor: hsl(193, 78%, 48%, 1);
-    --bodyColor: hsl(229, 44%, 50%, 1);
-    --fontRegularColor: hsl(252, 2%, 51%);
-    --fontHeadingColor: hsl(229, 44%, 50%, 1);
-    --sectionBg: hsl(229, 51%, 19%, 1);
+    --bodyBgColor: #4d70d2;
+    --bodyColor: #262626;
+
+    --sectionBg: hsl(228, 18%, 52%);
+    --boxBg:#729ce6;
   }
 }

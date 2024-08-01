@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { DropdownItems } from "./dropdown-items";
 import { dropdownItem } from "./interface";
-import { IconType } from "react-icons";
 
 const useClickOutside = (
     ref: React.RefObject<HTMLDivElement>,

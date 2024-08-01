@@ -1,4 +1,5 @@
 import { dropdownItem } from "./interface";
+import "./dropdown.css";
 
 
 type props = {
@@ -9,7 +10,7 @@ type props = {
 export const DropdownItems = ({ dropdownItems, onSelectedItem }: props) => {
   return (
     <>
-      <section className="bg-bodyBgColor absolute right-0 min-w-32 shadow z-10 p-1">
+      <section className="dropdown-box">
         <div className="flex flex-col w-max box-content">
           {dropdownItems.map((item, index) => (
             <div

@@ -4,7 +4,7 @@
 
 @layer components {
   .topbar {
-    @apply flex flex-row w-full py-[7px] bg-bodyColor items-center;
+    @apply flex flex-row w-full py-[5px] bg-bodyColor items-center;
   }
 
   .topbar .right-content {

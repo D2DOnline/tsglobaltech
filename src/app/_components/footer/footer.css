@@ -21,6 +21,6 @@
   }
 
   .footer-heading {
-    @apply text-black text-[2rem] text-fontHeadingColor;
+    @apply text-black text-[2rem] text-bodyColor;
   }
 }

@@ -125,4 +125,9 @@ services_page_heading: "हम क्या सेवा करते हैं?
   footer_sub_heading_head_text_3: "संपर्क करें",
 
   career_page_heading: "टीएस ग्लोबल टेक से जुड़ें",
+  career_option_AI_ML_heading: "एआई/एमएल",
+  career_option_web_heading: "वेब विकास",
+  career_option_mobile_heading: "मोबाइल ऐप विकास",
+  career_option_not_open_position_message: `फिलहाल कोई खुली स्थिति नहीं है, कृपया कुछ समय बाद जांचें,
+              निश्चित रूप से जल्द ही कोई खुली स्थिति होगी।`,
 };

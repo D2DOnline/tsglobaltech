@@ -10,16 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         brandColor: "var(--brandColor)",
-        bodyBgColor:"var(--bodyBgColor)",
+        bodyBgColor: "var(--bodyBgColor)",
         bodyColor: "var(--bodyColor)",
-        fontRegularColor: "var(--fontRegularColor)",
-        fontHeadingColor: "var(--fontHeadingColor)",
-        sectionBg:"var(--sectionBg)"
-    
+
+        sectionBg: "var(--sectionBg)",
+        boxBg: "var(--boxBg)",
       },
       boxShadow: {
-        '3xl': '0 35px 60px -15px var(--bodyColor)',
-      }
+        "3xl": "0 15px 40px -25px var(--bodyColor)",
+      },
     },
   },
   plugins: [],

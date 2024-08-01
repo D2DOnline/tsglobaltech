@@ -9,8 +9,9 @@ export const content: iLanguageContent = {
   common_address_country: "India",
   common_phone: "Phone",
   common_email: "Email",
-  common_cookies_info:"This website uses cookies to store some data for better performance and your preferences, by continuing to browse our website, you consent to our use of cookies.",
-  common_close:"Close",
+  common_cookies_info:
+    "This website uses cookies to store some data for better performance and your preferences, by continuing to browse our website, you consent to our use of cookies.",
+  common_close: "Close",
 
   site_navigation_home: "Home",
   site_navigation_services: "Services",
@@ -124,4 +125,9 @@ export const content: iLanguageContent = {
   footer_sub_heading_head_text_3: "Contact Us",
 
   career_page_heading: "Join TS Global Tech.",
+  career_option_AI_ML_heading: "AI/ML",
+  career_option_web_heading: "Web Development",
+  career_option_mobile_heading: "Mobile App Development",
+  career_option_not_open_position_message: `Currently no open position, please check after some time, we will
+              surely have some open posion soon.`,
 };

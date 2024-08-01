@@ -11,7 +11,7 @@
     @apply fill-brandColor;
   }
 
-  .logo-text-main {
+  /* .logo-text-main {
     @apply fill-fontHeadingColor
         text-[260px] 
         translate-x-[658px] 
@@ -23,5 +23,5 @@
         text-[230px] 
         translate-x-[120px] 
         translate-y-[1060px];
-  }
+  } */
 }

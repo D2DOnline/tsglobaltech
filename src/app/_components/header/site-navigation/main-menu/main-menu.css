@@ -18,7 +18,7 @@
   }
 
   .menu-vertical ul {
-    @apply py-[60px] px-[40px] w-[250px] h-[100vh] bg-bodyBgColor;
+    @apply py-[60px] px-[40px] w-[250px] h-[100vh] bg-boxBg shadow-3xl;
   }
 
   .menu-vertical-hide {
@@ -30,7 +30,7 @@
   }
 
   .menu-vertical .menu-item{
-    @apply py-[10px] px-[15px] text-bodyColor text-[1.15rem];
+    @apply py-[10px] px-[15px] text-bodyColor text-[1.15rem] hover:border-b-2;
   }
 
 }
