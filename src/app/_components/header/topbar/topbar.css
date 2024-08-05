@@ -14,4 +14,8 @@
   .topbar .right-content li{
     @apply mx-2 md:mx-3 text-bodyBgColor text-[1rem];
   }
+
+  .topbar .right-content li:hover{
+    @apply text-textHoverColor;
+  }
 }

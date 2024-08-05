@@ -24,8 +24,8 @@ export const content: iLanguageContent = {
     "A pioneering tech startup dedicated to crafting innovative web, desktop and mobile solutions, uniquely powered by advanced artificial intelligence",
   banner_slide_1_button_text: "Explore more...",
 
-  banner_slide_2_heading: "Various types of s/w development",
-  banner_slide_2_text: "AI/ML, Web Developmet, Desktop and Mobile app",
+  banner_slide_2_heading: "AI/ML, Generative AI, Cloud, S/w development",
+  banner_slide_2_text: "AI/ML, Web Developmet, Desktop and Mobile app development",
   banner_slide_2_button_text: "Our Services",
 
   banner_slide_3_heading: "Bright career with us",

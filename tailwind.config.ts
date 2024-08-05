@@ -9,12 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brandColor: "var(--brandColor)",
-        bodyBgColor: "var(--bodyBgColor)",
-        bodyColor: "var(--bodyColor)",
-
-        sectionBg: "var(--sectionBg)",
-        boxBg: "var(--boxBg)",
+        brandColor: "var(--color-brand)",
+        bodyBgColor: "var(--color-body-background)",
+        bodyColor: "var(--color-body)",
+        boxBg: "var(--color-box-background)",
+        textHoverColor: "var(--color-brand)",
+        buttonHoverColor: "var(--color-box-background)",
+        listHoverBgColor:"var(--color-body)",
+        whiteColor:"#fff",
       },
       boxShadow: {
         "3xl": "0 15px 40px -25px var(--bodyColor)",

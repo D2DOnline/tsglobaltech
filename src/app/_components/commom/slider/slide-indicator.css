@@ -15,6 +15,6 @@
   }
 
   .indicator.active {
-    @apply bg-boxBg;
+    @apply bg-brandColor;
   }
 }

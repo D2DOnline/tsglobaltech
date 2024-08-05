@@ -9,7 +9,7 @@
   }
 
   .menu-horizontal .menu-item {
-    @apply mx-[0.5rem] text-bodyColor text-[1.15rem] hover:border-b-2;
+    @apply mx-[0.5rem] text-bodyColor text-[1.15rem] hover:text-textHoverColor;
   }
 
   .menu-vertical {
@@ -30,7 +30,7 @@
   }
 
   .menu-vertical .menu-item{
-    @apply py-[10px] px-[15px] text-bodyColor text-[1.15rem] hover:border-b-2;
+    @apply py-[10px] px-[15px] text-bodyColor text-[1.15rem] hover:bg-textHoverColor;
   }
 
 }

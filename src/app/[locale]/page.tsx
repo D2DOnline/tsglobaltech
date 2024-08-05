@@ -11,7 +11,8 @@ export default function Home() {
         <Slider />
       </Banner>
       <Services />
-      <AboutUs />
+      {/* <WhyUs/> */}
+      {/* <AboutUs /> */}
     </main>
   );
 }

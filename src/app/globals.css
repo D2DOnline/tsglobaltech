@@ -4,50 +4,39 @@
 
 @layer base {
   :root {
-    --brandColor: hsl(193, 78%, 48%, 1);
-    --bodyBgColor: #fff;
-    --bodyColor: #262626;
+  /* brand color */
+  --color-brand: rgb(14 165 233);
 
-    --sectionBg: hsl(219, 55%, 95%, 1);
-    --boxBg:#e9e0e0;
+  /* theme color(s) */
+  --color-body-background: rgb(255, 255, 255);
+  --color-body: rgb(0, 0, 0);
+  --color-box-background:rgb(242, 242, 242);
   }
 
   @media (prefers-color-scheme: dark) {
-    :root {
-      --brandColor: hsl(193, 78%, 48%, 1);
-      --bodyBgColor: #262626;
-      --bodyColor: #fff;
-
-      --sectionBg: hsl(229, 21%, 13%, 1);
-      --boxBg:#3d3b3b;
-    }
+    @import "themes/dark-theme.css"; 
   }
 
-  :root[data-theme="dark"] {
-    --brandColor: hsl(193, 78%, 48%, 1);
+  /* :root[data-theme="dark"] {
+    --brandColor:rgb(14 165 233);
     --bodyBgColor: #262626;
     --bodyColor: #fff;
 
     --sectionBg: hsl(229, 21%, 13%, 1);
     --boxBg:#3d3b3b;
-  }
+  } */
 
-  :root[data-theme="light"] {
-    --brandColor: hsl(193, 78%, 48%, 1);
-    --bodyBgColor: #fff;
-    --bodyColor: #262626;
-
-    --sectionBg: hsl(219, 55%, 95%, 1);
-    --boxBg:#e9e0e0;
-  }
+  @import "themes/light-theme.css";
+  @import "themes/dark-theme.css";
+  @import "themes/custom-theme.css";
   
 
-  :root[data-theme="custom"] {
+  /* :root[data-theme="custom"] {
     --brandColor: hsl(193, 78%, 48%, 1);
     --bodyBgColor: #4d70d2;
     --bodyColor: #262626;
 
     --sectionBg: hsl(228, 18%, 52%);
     --boxBg:#729ce6;
-  }
+  } */
 }

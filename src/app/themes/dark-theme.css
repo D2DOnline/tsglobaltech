@@ -1,0 +1,11 @@
+:root[data-theme="dark"] {
+    /* colors */
+  
+    /* brand color */
+    --color-brand: rgb(14 165 233);
+  
+   /* theme color(s) */
+   --color-body-background: rgb(0, 0, 0);
+   --color-body: rgb(255, 255, 255);
+   --color-box-background:rgb(115, 115, 115);
+  }

@@ -41,7 +41,7 @@
     @apply px-[2.5%] sm:px-[5%] md:px-[10%];
   }
   .section-bg {
-    @apply bg-sectionBg;
+    @apply bg-boxBg;
   }
   .section-header {
     @apply text-center text-[3rem] text-bodyColor;
