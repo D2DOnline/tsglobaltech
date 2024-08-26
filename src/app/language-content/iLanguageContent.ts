@@ -1,3 +1,4 @@
+
 function proxiedPropertiesOf<TObj>(obj?: TObj) {
   return new Proxy(
     {},
@@ -25,6 +26,7 @@ export interface iLanguageContent {
   common_email:string;
   common_cookies_info:string;
   common_close:string;
+  common_read_more:string;
 
 
   site_navigation_home: string;
@@ -107,5 +109,28 @@ export interface iLanguageContent {
   career_option_mobile_heading:string;
   career_option_not_open_position_message:string;
 
+  capability_1_title:string;
+  capability_1_shortDiscription:string;
+
+  capability_2_title:string;
+  capability_2_shortDiscription:string;
+
+  capability_3_title:string;
+  capability_3_shortDiscription:string;
+
+  capability_4_title:string;
+  capability_4_shortDiscription:string;
+
+  capability_5_title:string;
+  capability_5_shortDiscription:string;
+
+  capability_6_title:string;
+  capability_6_shortDiscription:string;
+
+  capability_7_title:string;
+  capability_7_shortDiscription:string;
+
+  capability_8_title:string;
+  capability_8_shortDiscription:string;
 
 }

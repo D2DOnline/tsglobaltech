@@ -8,7 +8,7 @@
   .logo-traingle-1,
   .logo-traingle-2,
   .logo-traingle-3 {
-    @apply fill-brandColor;
+    @apply fill-brandColorPrimary;
   }
 
   /* .logo-text-main {

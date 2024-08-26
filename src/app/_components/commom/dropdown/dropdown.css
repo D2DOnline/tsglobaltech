@@ -2,7 +2,7 @@
 
 @layer components {
   .dropdown-box {
-    @apply bg-boxBg absolute right-0 min-w-32 z-10 py-1 mt-[8px] rounded-lg shadow-3xl;
+    @apply bg-bodyBgColor absolute right-0 min-w-32 z-10 py-1 mt-[8px] rounded-lg shadow-3xl border-2;
   }
 
   .language-icon {

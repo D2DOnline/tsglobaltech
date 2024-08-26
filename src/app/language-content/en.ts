@@ -12,6 +12,7 @@ export const content: iLanguageContent = {
   common_cookies_info:
     "This website uses cookies to store some data for better performance and your preferences, by continuing to browse our website, you consent to our use of cookies.",
   common_close: "Close",
+  common_read_more: "Read more...",
 
   site_navigation_home: "Home",
   site_navigation_services: "Services",
@@ -25,7 +26,8 @@ export const content: iLanguageContent = {
   banner_slide_1_button_text: "Explore more...",
 
   banner_slide_2_heading: "AI/ML, Generative AI, Cloud, S/w development",
-  banner_slide_2_text: "AI/ML, Web Developmet, Desktop and Mobile app development",
+  banner_slide_2_text:
+    "AI/ML, Web Developmet, Desktop and Mobile app development",
   banner_slide_2_button_text: "Our Services",
 
   banner_slide_3_heading: "Bright career with us",
@@ -130,4 +132,36 @@ export const content: iLanguageContent = {
   career_option_mobile_heading: "Mobile App Development",
   career_option_not_open_position_message: `Currently no open position, please check after some time, we will
               surely have some open posion soon.`,
+
+  capability_1_title: "UX and Responsive UI",
+  capability_1_shortDiscription:
+    "We have expert and dedicated team for UX/UI design to meet any types of business requirement. We have experienced developers to use UX design tools like Figma.",
+
+  capability_2_title: "Web devlopment",
+  capability_2_shortDiscription: `We have expertise with a variety of websites development, from simple static pages to complex web applications. 
+Our teams are very capable with various frontend as well as backend web technologies like Nextjs, Reactjs, Angular, .Net, NodeJs etc.`,
+
+  capability_3_title: "Android app development",
+  capability_3_shortDiscription: `We have expert team to develop Android app for all version of android OS with latest tools and technologies.
+We develop native Android app with help of android studio.`,
+
+  capability_4_title: "iOS app devlopment",
+  capability_4_shortDiscription: `We have expert team to develop iOS app for all version of iPhone with latest tools and technologies.
+We develop native iOS app with help of xCode and Swift.`,
+
+  capability_5_title: "Migration Project",
+  capability_5_shortDiscription:
+    "Our teams have much experience with various types of migration project like Win Form to WPF, Desktop application to Web application, Older Web application to New one.",
+
+  capability_6_title: "Desktop Application",
+  capability_6_shortDiscription:
+    "Our teams are very much capable to develop windows desktop app to meet any types of business requirements using .Net technologies like WPF.",
+
+  capability_7_title: "AI/ML and Data Analysis",
+  capability_7_shortDiscription:
+    "We have IIT Delhi certified AI/ML developers who are very much eligible to provide number of statistical ML model as well as custom ML/DL model using technologies like Keras, TensorFlow etc.",
+
+  capability_8_title: "Cloud Solution",
+  capability_8_shortDiscription: `We have cloud experts to provide various cloud solution as per business need. 
+We provide cloud solutions with respect to various services provided by lead cloud computing provider like AWS, AZURE.`,
 };

@@ -4,21 +4,25 @@
 
 @layer base {
   :root {
-  /* brand color */
-  --color-brand: rgb(14 165 233);
+    /* brand color */
+    --color-brand-primary: rgba(14, 165, 233, 1);
+    --color-brand-secondary: rgba(3, 124, 178, 1);
 
-  /* theme color(s) */
-  --color-body-background: rgb(255, 255, 255);
-  --color-body: rgb(0, 0, 0);
-  --color-box-background:rgb(242, 242, 242);
+    /* theme color(s) */
+    --color-body-background: rgba(255, 255, 255, 1);
+    --color-body: rgba(0, 0, 0, 1);
+    --color-section-background: rgba(0, 0, 0, 0.05);
+
+    --color-box-border: rgba(217, 217, 217, 1);
+    --color-card-shadow: rgba(0, 0, 0, 0.3);
   }
 
   @media (prefers-color-scheme: dark) {
-    @import "themes/dark-theme.css"; 
+    @import "themes/dark-theme.css";
   }
 
   /* :root[data-theme="dark"] {
-    --brandColor:rgb(14 165 233);
+    --brandColorPrimary:rgb(14 165 233);
     --bodyBgColor: #262626;
     --bodyColor: #fff;
 
@@ -29,10 +33,9 @@
   @import "themes/light-theme.css";
   @import "themes/dark-theme.css";
   @import "themes/custom-theme.css";
-  
 
   /* :root[data-theme="custom"] {
-    --brandColor: hsl(193, 78%, 48%, 1);
+    --brandColorPrimary: hsl(193, 78%, 48%, 1);
     --bodyBgColor: #4d70d2;
     --bodyColor: #262626;
 

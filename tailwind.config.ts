@@ -9,17 +9,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brandColor: "var(--color-brand)",
+        brandColorPrimary: "var(--color-brand-primary)",
+        brandColorSecondary: "var(--color-brand-secondary)",
+
         bodyBgColor: "var(--color-body-background)",
         bodyColor: "var(--color-body)",
-        boxBg: "var(--color-box-background)",
-        textHoverColor: "var(--color-brand)",
+
+        sectionBg: "var(--color-section-background)",
+
+        textHoverColor: "var(--color-brand-primary)",
         buttonHoverColor: "var(--color-box-background)",
-        listHoverBgColor:"var(--color-body)",
-        whiteColor:"#fff",
+        listHoverBgColor: "var(--color-body)",
+        whiteColor: "#fff",
       },
       boxShadow: {
-        "3xl": "0 15px 40px -25px var(--bodyColor)",
+        "3xl": "0 15px 40px -25px var(--color-body)",
+        card: "0 2px 5px 3px var(--color-box-shadow)",
+        "card-hover": "0 4px 10px 6px var(--color-box-shadow)",
+      },
+      borderRadius: {
+        card: "12px",
       },
     },
   },

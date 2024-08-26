@@ -1,11 +1,12 @@
 :root[data-theme="light"] {
-  /* colors */
-
   /* brand color */
-  --color-brand: rgb(14 165 233);
+  --color-brand-primary: rgba(14, 165, 233, 1);
+  --color-brand-secondary: rgba(3, 124, 178, 1);
 
   /* theme color(s) */
-  --color-body-background: rgb(255, 255, 255);
-  --color-body: rgb(0, 0, 0);
-  --color-box-background-:rgb(147, 143, 143);
+  --color-body-background: rgba(255, 255, 255,1);
+  --color-body: rgba(0, 0, 0,1);
+  --color-section-background:rgba(0, 0, 0, 0.05);
+  --color-box-border:rgba(217, 217, 217, 1);
+  --color-box-shadow:rgba(0, 0, 0, 0.3);
 }

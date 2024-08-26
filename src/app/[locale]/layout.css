@@ -7,10 +7,9 @@
     @apply m-0 p-0;
   }
 
-  html{
+  html {
     @apply font-["verdon"] font-["verdana"] leading-normal text-xs;
   }
-  
 
   body {
     @apply flex flex-col w-screen bg-bodyBgColor text-bodyColor;
@@ -41,7 +40,7 @@
     @apply px-[2.5%] sm:px-[5%] md:px-[10%];
   }
   .section-bg {
-    @apply bg-boxBg;
+    @apply bg-sectionBg;
   }
   .section-header {
     @apply text-center text-[3rem] text-bodyColor;
@@ -56,7 +55,7 @@
   }
 
   .section-item-box {
-    @apply w-full bg-boxBg shadow-3xl flex flex-col justify-center items-center my-[2rem];
+    @apply w-full bg-sectionBg shadow-3xl flex flex-col justify-center items-center my-[2rem];
   }
 
   .page-heading {

@@ -12,30 +12,30 @@ export const Services = () => {
         <div className="section-header">{t(lc.services_heading)}</div>
 
         <div className="section-content flex flex-col">
-          <div className="bg-boxBg p-10 my-5">
-          <div className="section-content-header">
-            {t(lc.services_sub_heading_head_text_1)}
+          <div className="bg-sectionBg p-10 my-5">
+            <div className="section-content-header">
+              {t(lc.services_sub_heading_head_text_1)}
+            </div>
+            <p>{t(lc.services_sub_heading_text_1)}</p>
           </div>
-          <p>{t(lc.services_sub_heading_text_1)}</p>
+          <div className="bg-sectionBg p-10 my-5">
+            <div className="section-content-header">
+              {t(lc.services_sub_heading_head_text_2)}
+            </div>
+            <p>{t(lc.services_sub_heading_text_1)}</p>
           </div>
-          <div className="bg-boxBg p-10 my-5">
-          <div className="section-content-header">
-            {t(lc.services_sub_heading_head_text_2)}
+          <div className="bg-sectionBg p-10 my-5">
+            <div className="section-content-header">
+              {t(lc.services_sub_heading_head_text_3)}
+            </div>
+            <p>{t(lc.services_sub_heading_text_1)}</p>
           </div>
-          <p>{t(lc.services_sub_heading_text_1)}</p>
-</div>
-<div className="bg-boxBg p-10 my-5">
-          <div className="section-content-header">
-            {t(lc.services_sub_heading_head_text_3)}
+          <div className="bg-sectionBg p-10 my-5">
+            <div className="section-content-header">
+              {t(lc.services_sub_heading_head_text_4)}
+            </div>
+            <p>{t(lc.services_sub_heading_text_1)}</p>
           </div>
-          <p>{t(lc.services_sub_heading_text_1)}</p>
-</div>
-<div className="bg-boxBg p-10 my-5">
-          <div className="section-content-header">
-            {t(lc.services_sub_heading_head_text_4)}
-          </div>
-          <p>{t(lc.services_sub_heading_text_1)}</p>
-        </div>
         </div>
       </section>
     </>

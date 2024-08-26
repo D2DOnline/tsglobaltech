@@ -33,7 +33,9 @@ export const SiteLogo = () => {
 
             <text className="logo-text-base">global tech</text> */}
           </svg>
-          <span className="text-brandColor text-3xl">TS Global Tech</span>
+          <span className="text-brandColorPrimary text-3xl">
+            TS Global Tech
+          </span>
         </div>
       </TSGT_Link>
     </>
