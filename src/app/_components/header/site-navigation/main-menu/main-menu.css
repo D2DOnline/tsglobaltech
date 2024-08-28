@@ -18,7 +18,7 @@
   }
 
   .menu-vertical ul {
-    @apply py-[60px] px-[40px] w-[250px] h-[100vh] bg-sectionBg shadow-3xl;
+    @apply py-[60px] px-[40px] w-[250px] h-[100vh] bg-bodyBgColor shadow-3xl;
   }
 
   .menu-vertical-hide {

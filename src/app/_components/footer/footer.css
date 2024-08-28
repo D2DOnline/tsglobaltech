@@ -4,23 +4,45 @@
 
 @layer components {
   .footer {
-    @apply flex flex-col;
+    @apply flex flex-col bg-footerBgColor text-whiteColor
+   
   }
 
-  .footer-top {
-    @apply flex flex-row justify-between;
+  .footer-content{
+    @apply flex flex-col  md:flex-row;
   }
-
-  .footer-top-left {
-    @apply flex flex-row justify-between w-1/2;
-  }
-
-  .footer-top-left-col1,
-  .footer-top-left-col2 {
-    @apply flex flex-col justify-between w-1/2;
+  .footer-info{
+    @apply flex flex-col items-center md:w-1/2; 
   }
 
   .footer-heading {
-    @apply text-black text-[2rem] text-bodyColor;
+    @apply text-black text-[1.5rem] text-brandColorPrimary pt-5;
+  }
+
+  .company-info,
+  .useful-links,
+  .mobile-app {
+    @apply flex flex-col items-center;
+  }
+
+  .mobile-app > .apps-link {
+    @apply flex;
+  }
+
+  .mobile-app > .apps-link > .fa-android, .mobile-app > .apps-link > .fa-apple {
+    @apply text-[4rem] mx-5 border-2 p-2 rounded-lg cursor-pointer;
+  }
+
+  .mobile-app > .apps-link > .fa-android:hover,
+  .mobile-app > .apps-link > .fa-apple:hover {
+    @apply text-textHoverColor;
+  }
+
+  .footer-contact-form {
+    @apply w-full;
+  }
+
+  .copyright{
+    @apply flex justify-center;
   }
 }

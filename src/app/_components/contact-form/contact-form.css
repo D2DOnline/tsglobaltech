@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components {
+  .text-name,
+  .text-email,
+  .text-message,
+  .text-phone {
+    @apply w-full my-2;
+  }
+}

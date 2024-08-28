@@ -20,6 +20,7 @@ const config: Config = {
         textHoverColor: "var(--color-brand-primary)",
         buttonHoverColor: "var(--color-box-background)",
         listHoverBgColor: "var(--color-body)",
+        footerBgColor: "#000",
         whiteColor: "#fff",
       },
       boxShadow: {

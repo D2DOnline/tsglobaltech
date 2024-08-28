@@ -38,7 +38,6 @@ export default async function RootLayout({
           <Breadcrumb />
           {children}
           <Footer />
-          <CopyrightInfo />
           <CookiesInfo />
         </NextIntlClientProvider>
       </body>
