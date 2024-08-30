@@ -5,6 +5,17 @@
   .text-email,
   .text-message,
   .text-phone {
-    @apply w-full my-2;
+    @apply w-full my-5;
+  }
+
+  .button-send{
+    @apply flex justify-center;
+  }
+
+  .contact-form {
+    @apply w-full px-[20px];
+  }
+  .text-name{
+    @apply mt-0;
   }
 }

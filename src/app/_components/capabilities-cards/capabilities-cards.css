@@ -2,11 +2,20 @@
 
 @layer components {
   .capabilities-cards {
-    @apply py-[2rem];
+    @apply py-[3rem];
   }
   .card-wrapper {
     @apply my-[3rem] box-border;
   }
+
+  .card-wrapper:first-child {
+    @apply mt-0;
+  }
+
+  .card-wrapper:last-child {
+    @apply mb-0;
+  }
+
   .card-content {
     @apply flex flex-col items-center;
   }

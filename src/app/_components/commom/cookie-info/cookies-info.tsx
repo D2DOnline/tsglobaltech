@@ -18,6 +18,7 @@ export const CookiesInfo = () => {
       <div className="cookie-info-close">
         <TSGT_Button
           text={"X"}
+          type={"button"}
           onClick={() => setIsClose(true)}
           link={undefined}
         />

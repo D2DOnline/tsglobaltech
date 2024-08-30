@@ -15,7 +15,7 @@ export const Slide = ({ content, isCurrent }: props) => {
         <div className="text">{content.text}</div>
         <br/>
         <br/>
-        <div className="slide-button"><TSGT_Button text={content.buttonText} onClick={() => null} link={content.link} /></div>
+        <div className="slide-button"><TSGT_Button type={"button"} text={content.buttonText} onClick={() => null} link={content.link} /></div>
       </div>
     </>
   );
