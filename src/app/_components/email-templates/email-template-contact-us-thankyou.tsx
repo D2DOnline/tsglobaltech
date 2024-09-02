@@ -2,12 +2,11 @@ import {
   Body,
   Container,
   Head,
-  Hr,
   Html,
   Preview,
   Text,
 } from "@react-email/components";
-import { SiteLogo } from "../site-logo/site-logo";
+import { EmailSignature } from "./email-signature";
 
 type props = {
   fullName: string;
@@ -46,10 +45,8 @@ export const EmailTemplateContactUsThankyou = ({ fullName, email }: props) => {
             style={textStyle.base}
           >{`Thankyou to contact TS GLOBAL TECH, Our team will response your query/message shortly.`}</Text>
 
-          <Text style={textStyle.base}>{`Thanks & Best Regards,`}</Text>
-          <Text>{`TS GLOBAL TECH`}</Text>
-          <Text>{`+91 935 551 0301`}</Text>
-          <Text>{`team@tsglobaltech.com`}</Text>
+          <Text></Text>
+          <EmailSignature/>
         </Container>
       </Body>
     </Html>

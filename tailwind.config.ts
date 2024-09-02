@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/context/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -22,6 +23,11 @@ const config: Config = {
         listHoverBgColor: "var(--color-body)",
         footerBgColor: "#000",
         whiteColor: "#fff",
+
+        successBg: '#4caf50',
+        errorBg: '#f44336',
+        warningBg: '#ff9800',
+        infoBg: '#2196f3',
       },
       boxShadow: {
         "3xl": "0 15px 40px -25px var(--color-body)",

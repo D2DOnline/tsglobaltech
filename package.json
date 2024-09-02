@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-email/components": "^0.0.23",
+    "classnames": "^2.5.1",
     "next": "14.2.5",
     "next-intl": "^3.17.2",
     "react": "^18",

@@ -1,5 +1,6 @@
 import { TSGT_Link } from "@/app/_components/commom/Link/link";
 import "./site-logo.css";
+import Logo from "./site-logo.svg";
 
 export const SiteLogo = () => {
   return (

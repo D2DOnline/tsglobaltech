@@ -1,6 +1,8 @@
+import { useSnackbar } from "@/context/snackbar-context";
 import { TSGT_Button } from "../commom/button/button";
 import { TSGT_TextArea } from "../commom/input/textArea/textArea";
 import { TSGT_TextBox } from "../commom/input/textBox/textBox";
+import { Snackbar } from "../commom/snackbar/snackbar";
 
 import "./contact-form.css";
 import { ChangeEvent, FormEvent, useState } from "react";
@@ -13,6 +15,9 @@ type ContactEmailProps = {
 };
 
 export const ContactForm = () => {
+
+  const showSnackbar = useSnackbar();
+
   const [formData, setFormData] = useState<ContactEmailProps>({
     fullName: "",
     email: "",
@@ -31,9 +36,10 @@ export const ContactForm = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+   
 
     if (!formData.email || !formData.fullName || !formData.message) {
-      alert("Fullname, Email and message are required fields");
+      showSnackbar(`Fullname, Email and message are required fields!`, "info");
       return;
     }
 
@@ -53,7 +59,8 @@ export const ContactForm = () => {
       });
 
       if (response.ok) {
-        alert("Email Sent Successfully!");
+        // alert("Email Sent Successfully!");
+        showSnackbar(`Email Sent Successfully!`, "success");
         setFormData({
           fullName: "",
           email: "",
@@ -61,11 +68,11 @@ export const ContactForm = () => {
           message: "",
         });
       } else {
-        alert("There was a problem sending email. Pls try again!");
+        showSnackbar(`There was a problem sending email. Pls try again!`, "error");
       }
     } catch (error) {
       console.log("Error sending email:", error);
-      alert("There was a problem sending email. Pls try again!");
+      showSnackbar(`There was a problem sending email. Pls try again!`, "error");
     } finally {
       setIsSending(false);
     }

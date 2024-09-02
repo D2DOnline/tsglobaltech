@@ -11,6 +11,8 @@ import { CopyrightInfo } from "../_components/copyright-info/copyright-info";
 import { Breadcrumb } from "../_components/breadcrumb/breadcrumb";
 import { CookiesInfo } from "../_components/commom/cookie-info/cookies-info";
 import { Metadata } from "next";
+import { Snackbar } from "../_components/commom/snackbar/snackbar";
+import { SnackbarProvider } from "@/context/snackbar-context";
 
 export const metadata: Metadata = {
   title: "TS Global Tech",
@@ -34,11 +36,13 @@ export default async function RootLayout({
       {/* inter.className */}
       <body className={""}>
         <NextIntlClientProvider messages={messages}>
+        <SnackbarProvider>
           <Header />
           <Breadcrumb />
           {children}
           <Footer />
           <CookiesInfo />
+          </SnackbarProvider>
         </NextIntlClientProvider>
       </body>
     </html>
