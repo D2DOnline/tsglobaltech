@@ -79,7 +79,7 @@ export const SnackbarProvider: React.FC<SnackbarProviderProps> = ({
 
       <div
         className={classNames(
-          "transition-transform top-12 font-medium text-white right-4 left-4 fixed flex justify-between gap-2 items-center shadow-md min-h-[48px] max-w-[100vw] px-4 py-2 rounded-lg min-w-[300px] text-sm whitespace-break-spaces z-50",
+          "transition-transform top-24 font-medium text-white right-4 ml-4 fixed flex justify-between gap-2 items-center shadow-md min-h-[48px] max-w-[100vw] px-4 py-2 rounded-lg min-w-[300px] text-sm whitespace-break-spaces z-50",
           {
             ["bg-successBg "]: snackbar?.variant === "success",
             ["bg-errorBg "]: snackbar?.variant === "error",

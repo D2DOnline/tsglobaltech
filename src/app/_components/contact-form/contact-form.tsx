@@ -68,11 +68,11 @@ export const ContactForm = () => {
           message: "",
         });
       } else {
-        showSnackbar(`There was a problem sending email. Pls try again!`, "error");
+        showSnackbar(`There was a problem sending email. Pls try again! here was a problem sending email. Pls try againhere was a problem sending email. Pls try againhere was a problem sending email. Pls try againhere was a problem sending email. Pls try againhere was a problem sending email. Pls try againhere was a problem sending email. Pls try againhere was a problem sending email. Pls try againhere was a problem sending email. Pls try again`, "error");
       }
     } catch (error) {
       console.log("Error sending email:", error);
-      showSnackbar(`There was a problem sending email. Pls try again!`, "error");
+      showSnackbar(`There was a problem sending email. Pls try again! here was a problem sending email. Pls try again here was a problem sending email. Pls try again here was a problem sending email. Pls try again`, "error");
     } finally {
       setIsSending(false);
     }
