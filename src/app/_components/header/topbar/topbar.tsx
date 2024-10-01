@@ -5,7 +5,14 @@ import ThemeSwitcher from "../theme-switcher/theme-switcher";
 import "./topbar.css";
 import { LanguageSwitcher } from "../language-switcher/language-switcher";
 
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube, FaGripLinesVertical } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaGripLinesVertical,
+} from "react-icons/fa";
+import Link from "next/link";
 
 const useClickOutside = (
   ref: React.RefObject<HTMLDivElement>,
@@ -46,10 +53,16 @@ export const Topbar = () => {
   return (
     <>
       <div className="topbar body-content">
-       
         <ul className="right-content">
-        <li>
-            <FaFacebook />
+          <li>
+            <Link
+              href={
+                "https://www.facebook.com/people/TS-Global-TECH/61566470257707/"
+              }
+              target="_blank"
+            >
+              <FaFacebook />
+            </Link>
           </li>
           <li>
             <FaInstagram />
@@ -61,7 +74,7 @@ export const Topbar = () => {
             <FaYoutube />
           </li>
           <li className="opacity-[0.25]">
-            <FaGripLinesVertical/>
+            <FaGripLinesVertical />
           </li>
           <li>
             <ThemeSwitcher />
