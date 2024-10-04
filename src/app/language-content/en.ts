@@ -42,7 +42,7 @@ export const content: iLanguageContent = {
   about_page_heading: "Who are we?",
   about_heading: "About Us",
   about_sub_heading_1: "Company Overview",
-  about_sub_heading_1_text: `Technology To Serve is a pioneering tech startup dedicated to
+  about_sub_heading_1_text: `TS GLOBAL TECH is a pioneering tech startup dedicated to
             revolutionizing the digital landscape through cutting-edge web and
             mobile solutions powered by Artificial Intelligence (AI). At the
             intersection of innovation and technology, we amalgamate design
