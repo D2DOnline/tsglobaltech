@@ -8,6 +8,13 @@ const nextConfig = {
   // output: "export",
   images: { unoptimized: true },
   reactStrictMode: true,
+
+  experimental: {
+    serverComponentsExternalPackages: [
+      'sharp', 
+      'onnxruntime-node'
+    ],
+  },
   
   webpack(config) {
     // Grab the existing rule that handles SVG imports

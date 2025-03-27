@@ -1,4 +1,5 @@
 "use client";
+import { ChatbotButton } from "@/app/_components/chatbot/ChatbotButton";
 import { TSGT_Link } from "@/app/_components/commom/Link/link";
 import { lc } from "@/app/language-content/iLanguageContent";
 import { useTranslations } from "next-intl";
@@ -40,6 +41,10 @@ export const MenuItems = ({ containerStyle, onClose, isVertical }: props) => {
       </li>
       <li className={`menu-item ${isActiveMenuItem('contact-us',pathName)?"menu-item-active":""}`}>
         <TSGT_Link url="#footer">{t(lc.site_navigation_contact_us)}</TSGT_Link>
+      </li>
+      <li className={`menu-item ${isActiveMenuItem('chatbot',pathName)?"menu-item-active":""}`}>
+        {/* <TSGT_Link url="/chatbot">{"Ask AI"}</TSGT_Link> */}
+        <ChatbotButton/>
       </li>
     </>
   );

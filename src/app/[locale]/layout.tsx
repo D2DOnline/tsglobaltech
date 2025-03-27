@@ -13,6 +13,7 @@ import { CookiesInfo } from "../_components/commom/cookie-info/cookies-info";
 import { Metadata } from "next";
 import { Snackbar } from "../_components/commom/snackbar/snackbar";
 import { SnackbarProvider } from "@/context/snackbar-context";
+import {ChatbotButton} from "../_components/chatbot/ChatbotButton";
 
 export const metadata: Metadata = {
   title: "TS Global Tech",
