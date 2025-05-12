@@ -1,0 +1,164 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******************************** */
+/* Default - Mobile */
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+/* Header */
+#header-wrapper,
+header,
+footer,
+#footer-wrapper,
+#intro-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#header-wrapper {
+    position: sticky;
+    top:0;
+}
+
+header{
+    box-shadow: 0 0.3em 0.2em rgba(39,39,39,.2);
+    width: 100%;
+    background-color: #ffffff;
+}
+header {
+    margin: 0 0 0.2em 0;
+}
+
+.logo img{
+    height: 6em;
+}
+
+.sign-in,
+.menubar {
+    display: none;
+}
+
+/* Header End */
+
+/* Banner */
+
+.banner-wrapper,
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner
+img {
+    width: 100%;
+    height: 200px;
+}
+/* Banner End*/
+
+/* Menu strip */
+#menu-wrapper{
+    display: flex;
+    background-color: #b51e25;
+    justify-content: space-between;
+    padding: 0.8em;
+    position: sticky;
+    top:6.2em;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#ffffff;
+    font-size: larger;
+}
+
+.menu-item i { 
+    margin: 0.2em;
+}
+
+/* Intro */
+.title p{
+    font-size: 2em;
+    color: #b51e25;
+    margin: 0.8em;
+}
+
+#intro-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro p {
+    padding:0 1em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/* Footer */
+#footer-wrapper {
+    background-color: black;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.copyright {
+    color: #ffffff;
+}
+
+
+
+@media screen {
+    
+}
