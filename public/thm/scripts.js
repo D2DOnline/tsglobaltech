@@ -6,14 +6,14 @@ function openNav() {
     document.getElementById("sidenav").style.width = "0";
   }
 
-  function openWhatsapp() {
+  function openDialer() {
     try {
-      window.open("whatsapp://send?phone=7838863462", "_blank");
+      window.open("tel: +917838863462", "_blank");
     } catch {
-      window.open("https://api.whatsapp.com/send?phone=7838863462&text=Hello", "_blank");
+     
     }
   }
-  function openWhatsapp1() {
+  function openWhatsapp() {
     try {
       window.open("https://api.whatsapp.com/send?phone=7838863462&text=Hello", "_blank");
     } catch {
