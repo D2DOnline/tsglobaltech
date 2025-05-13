@@ -111,12 +111,17 @@ img {
     top:0;
 }
 
-.menu-item {
+.menu-item,
+.menu-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
     color:#ffffff;
     font-size: larger;
+}
+
+.menu-item a {
+    font-size: large;
 }
 
 .menu-item i { 
