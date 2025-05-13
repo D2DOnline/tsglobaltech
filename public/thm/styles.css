@@ -142,6 +142,19 @@ img {
     line-height: 1.5em;
 }
 
+.intro .intro-button {
+    display: flex;
+    justify-content: center;
+    margin: 0.5em;
+}
+.primary-button{
+    background-color: #b51e25;
+    color: white;
+    padding: 0.2em 0.5em;
+    border: none;
+}
+
+
 /* Footer */
 #footer-wrapper {
     background-color: black;
@@ -156,6 +169,14 @@ footer {
 .copyright {
     color: #ffffff;
 }
+
+/* menu-collapsed */
+/* .menu-collapsed {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+} */
 
 
 
