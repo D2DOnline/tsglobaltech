@@ -20,3 +20,19 @@ function openNav() {
       
     }
   }
+
+  function openFb() {
+    try {
+      window.open("https://www.facebook.com/share/16Xa7h2YAT/", "_blank");
+    } catch {
+      
+    }
+  }
+
+  function openInsta() {
+    try {
+      window.open("https://www.instagram.com/thehimalayanmajesty?igsh=MXJvbjNzNm9wenZnbQ%3D%3D&utm_source=qr", "_blank");
+    } catch {
+      
+    }
+  }

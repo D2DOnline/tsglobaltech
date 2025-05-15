@@ -118,6 +118,7 @@ img {
     align-items: center;
     color:#ffffff;
     font-size: larger;
+    cursor: pointer;
 }
 
 .menu-item a {
@@ -158,6 +159,7 @@ img {
     padding: 0.5em 1em;
     border: none;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 
@@ -172,8 +174,29 @@ footer {
     margin: 0.5em;
 }
 
+.social-media {
+    color: white;
+    display: flex;
+
+}
+
+.social-media-icon {
+    width: 1em;
+    height: 1em;
+    border-radius: 0.5em;
+    background-color: #605a5a;
+    margin: 0.3em 0.8em;
+    font-size: 1em;
+    display: flex;
+    padding: 0.4em;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
 .copyright {
     color: #ffffff;
+    margin: 0.5em 0 0 0;
 }
 
 /* Side-nav */
