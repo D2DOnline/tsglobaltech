@@ -1,3 +1,14 @@
+:root {
+    --color-1:#b51e25;
+    --color-2:#680e0e;
+    --color-3:#605a5a;
+    --color-4:#e9ec9d;
+    --color-white:#FFFFFF;
+    --color-black:#000000;
+}
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family:'Times New Roman', Times, serif
 }
 ol, ul {
 	list-style: none;
@@ -69,7 +81,7 @@ footer,
 header{
     box-shadow: 0 0.3em 0.2em rgba(39,39,39,.2);
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--color-var(--color-white));
 }
 header {
     margin: 0 0 0.2em 0;
@@ -104,7 +116,7 @@ img {
 /* Menu strip */
 #menu-wrapper{
     display: flex;
-    background-color: #b51e25;
+    background-color: var(--color-1);
     justify-content: space-between;
     padding: 0.8em;
     position: sticky;
@@ -116,8 +128,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:#ffffff;
-    font-size: larger;
+    color:var(--color-4);
+    font-size: 1em;
     cursor: pointer;
 }
 
@@ -131,8 +143,8 @@ img {
 
 /* Intro */
 .title p{
-    font-size: 2em;
-    color: #b51e25;
+    font-size: 1.7em;
+    color: var(--color-1);
     margin: 0.8em;
 }
 
@@ -144,8 +156,10 @@ img {
 
 .intro p {
     padding:0 1em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.5em;
+    color: var(--color-3);
+    text-align: justify;
 }
 
 .intro .intro-button {
@@ -154,18 +168,18 @@ img {
     margin: 0.5em;
 }
 .primary-button{
-    background-color: #b51e25;
-    color: white;
-    padding: 0.5em 1em;
+    background-color: var(--color-1);
+    color: var(--color-4);
+    padding: 0.5em 1.5em;
     border: none;
-    font-size: 1.5em;
+    font-size: 1em;
     cursor: pointer;
 }
 
 
 /* Footer */
 #footer-wrapper {
-    background-color: black;
+    background-color: var(--color-black);
 }
 footer {
     display: flex;
@@ -175,7 +189,7 @@ footer {
 }
 
 .social-media {
-    color: white;
+    color: var(--color-4);
     display: flex;
 
 }
@@ -184,7 +198,7 @@ footer {
     width: 1em;
     height: 1em;
     border-radius: 0.5em;
-    background-color: #605a5a;
+    background-color: var(--color-3);
     margin: 0.3em 0.8em;
     font-size: 1em;
     display: flex;
@@ -195,7 +209,7 @@ footer {
 
 
 .copyright {
-    color: #ffffff;
+    color: var(--color-white);
     margin: 0.5em 0 0 0;
 }
 
@@ -207,7 +221,7 @@ footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #680e0e;
+    background-color: var(--color-2);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 3.5em;
@@ -217,7 +231,7 @@ footer {
     padding: 0.5em 0.5em 0.5em 2em;
     text-decoration: none;
     font-size: 1.5em;
-    color: #ffffff;
+    color: var(--color-var(--color-white));
     display: block;
     transition: 0.3s;
     white-space: nowrap;
