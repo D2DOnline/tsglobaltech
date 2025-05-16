@@ -5,6 +5,7 @@
   <title>The Himalayan Majesy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./modal.css">
   <!-- <link rel="stylesheet" href="./date-picker.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -40,7 +41,7 @@
         <i class="fa fa-whatsapp" aria-hidden="true"></i>
         <span>Chat</span>
       </div>
-      <div class="menu-item booknow-icon">
+      <div class="menu-item booknow-icon" id="booknow">
         <i class="fa fa-calendar" aria-hidden="true"></i>
         <span>Book now</span>
       </div>
@@ -78,7 +79,7 @@
           </div>
         </div>
         <div class="copyright">
-          &copy; 2025 by <strong>The Himalayan Majesy</strong>.
+          &copy; 2025 by <strong>The Himalayan Majesty</strong>.
         </div>
       </footer>
     </div> <!-- End of footer-wrapper -->
@@ -93,6 +94,41 @@
       <a href="#"><span>Contact Us</span></a>
       <a href="#"><span>FAQs</a>
     </div> <!-- End of side-nav -->
+
+    <!-- The Modal -->
+    <div id="bookNowModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-booknow-model">&times;</span>
+          <div class="model-title">Book Your Stay</div>
+        </div>
+        <div class="modal-body">
+          <div class="check-in">
+            <span>Check In</span>
+            <i class="fa fa-calendar"></i>
+          </div>
+          <div class="check-out">
+            <span>Check Out</span>
+            <i class="fa fa-calendar"></i>
+          </div>
+          <div class="adult">
+            <span>Adult</span>
+            <i class="fa fa-user"></i>
+          </div>
+          <div class="child">
+            <span>Child</span>
+            <i class="fa fa-child"></i>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="primary-button">
+            <span>Select Room(s)</span>
+          </button>
+        </div>
+      </div>
+
+    </div> <!-- End Modal-->
 
     <!-- <div id="date_picker">
       <div id="date_picker_input">
@@ -116,6 +152,7 @@
   </div>
 
   <script src="./scripts.js"></script>
+  <script src="./model.js"></script>
   <!-- <script src="./date-picker.js"></script> -->
 </body>
 
