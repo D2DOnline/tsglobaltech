@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./modal.css">
-  <!-- <link rel="stylesheet" href="./date-picker.css"> -->
+  <link rel="stylesheet" href="./date-picker.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -106,7 +106,25 @@
         <div class="modal-body">
           <div class="check-in">
             <span>Check In</span>
-            <i class="fa fa-calendar"></i>
+            <span id="checkin_date"></span>
+            <i class="fa fa-calendar" id="checkin"></i>
+            <div id="checkin_calender">
+              <div id="date_picker_calendar" class="hidden">
+                <div id="calendar_header">
+                  <span class="cal-btn back">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                  </span>
+                  <span id="cal_title"></span>
+                  <span class="cal-btn front">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div id="cal_wrapper">
+                  <div id="cal_days"></div>
+                  <div id="calendar_main"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="check-out">
             <span>Check Out</span>
@@ -130,30 +148,30 @@
 
     </div> <!-- End Modal-->
 
-    <!-- <div id="date_picker">
-      <div id="date_picker_input">
-        <input type="text" id="date" class="onFocus" readonly />
-      </div>
+
+    <div id="date_picker">
       <div id="date_picker_calendar" class="hidden">
         <div id="calendar_header">
-          <button class="cal-btn back"><img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2Uv0oDQRCHR9BKrAQJ2FgIdnc7njtzSbMzd7lGC80T5DXMW+gzpNJHsPEJYuELBA60EBELsfIfBGIixvNyt0IKP9h2vt3fb1iAfxaCXZt0DGuOrO8+jmHNQ3JHnwLDeutrOI4lJDcTAcngDwSDSUSkCbK++RSEJAdfejCkfX+31/63oq1N15H0rn7Bch80s42Z22SsdGsLrHQLVxZJLioLSC8BYKlQELLbQpanCrk/Y+y2C4dPFd6bP3s9hrI455aR9GqO219HUbRSWjB6xV5qDcnL7wJ5RZs2oQpIelqi2BOoShBkq0g6LMg932m11qAOhnX/5+zlEHyALOczhp+BL6x1DSR9mPoOHsM42QSfGE6yUR+kQxO7ttfhC80HheuaG9wAq10AAAAASUVORK5CYII="></button>
-          <span></span>
-          <button class="cal-btn front"><img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVR4nO2Uv0oDQRCHR9BKrAQJ2FgIdnc7njtzSbMzd7lGC80T5DXMW+gzpNJHsPEJYuELBA60EBELsfIfBGIixvNyt0IKP9h2vt3fb1iAfxaCXZt0DGuOrO8+jmHNQ3JHnwLDeutrOI4lJDcTAcngDwSDSUSkCbK++RSEJAdfejCkfX+31/63oq1N15H0rn7Bch80s42Z22SsdGsLrHQLVxZJLioLSC8BYKlQELLbQpanCrk/Y+y2C4dPFd6bP3s9hrI455aR9GqO219HUbRSWjB6xV5qDcnL7wJ5RZs2oQpIelqi2BOoShBkq0g6LMg932m11qAOhnX/5+zlEHyALOczhp+BL6x1DSR9mPoOHsM42QSfGE6yUR+kQxO7ttfhC80HheuaG9wAq10AAAAASUVORK5CYII="></button>
+          <span class="cal-btn back">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </span>
+          <span id="cal_title"></span>
+          <span class="cal-btn front">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </span>
         </div>
         <div id="cal_wrapper">
           <div id="cal_days"></div>
           <div id="calendar_main"></div>
         </div>
       </div>
-    </div> End of date-picker -->
+    </div> <!-- End of date-picker -->
 
   </div>
 
   <script src="./scripts.js"></script>
   <script src="./model.js"></script>
-  <!-- <script src="./date-picker.js"></script> -->
+  <script src="./date-picker.js"></script>
 </body>
 
 </html>

@@ -5,9 +5,9 @@
  */
 
 const calendar = document.querySelector("#calendar_main"),
-  input = document.querySelector("#date"),
+  input = document.querySelector("#checkin"),
   calHeader = document.querySelector("#calendar_header"),
-  calHeaderTitle = document.querySelector("#calendar_header span"),
+  calHeaderTitle = document.querySelector("#calendar_header #cal_title"),
   calDays = document.querySelector("#cal_days"),
   days = [
     "Sunday",
@@ -242,6 +242,7 @@ const selectOnClick = () => {
       cell.querySelector("span").classList.add("inactive_indicator");
     }
   });
+  
 };
 
 
@@ -288,5 +289,5 @@ document.querySelectorAll(".cal-btn").forEach((btn) => {
 input.addEventListener('click', () => {
   document.querySelector('#date_picker_calendar').classList.toggle('hidden');
   document.querySelector('#date_picker_input').classList.toggle('showCal');
-  document.querySelector('#date').classList.toggle('onFocus');
+//   document.querySelector('#date').classList.toggle('onFocus');
 });
