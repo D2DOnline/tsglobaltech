@@ -1,30 +1,32 @@
 :root {
-  --dark-body-bg: #232429;
-  --light-body-bg: #F5F7FB;
-  
-  --dark-input: #323741;
-  --light-input: #ffffff;
-  
-  --dark-border: #484D5A;
-  --light-border: #B8BCCB;
-  
-  --dark-date-foreground: #FFFFFF;
-  --dark-inactive-fg: #636A78;
-  --dark-active-fg: #9CA0B1;
-  --dark-current-year: #3B414A;
-  --dark-current-year-fg: #B2B8C9;
-  --dark-selected: #1D5EFF;
-  --dark-hover: #2C437B;
-  --dark-arrows-bg: #B0B8CC;
-  --dark-arrows-fill: #333641;
+    --dark-body-bg: #232429;
+    --light-body-bg: #F5F7FB;
+
+    --dark-input: #323741;
+    --light-input: #ffffff;
+
+    --dark-border: #484D5A;
+    --light-border: #B8BCCB;
+
+    --dark-date-foreground: #FFFFFF;
+    --dark-inactive-fg: #636A78;
+    --dark-active-fg: #9CA0B1;
+    --dark-current-year: #3B414A;
+    --dark-current-year-fg: #B2B8C9;
+    --dark-selected: #1D5EFF;
+    --dark-hover: #2C437B;
+    --dark-arrows-bg: #B0B8CC;
+    --dark-arrows-fill: #333641;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 /* body {
@@ -34,13 +36,13 @@ html {
 } */
 
 #date_picker {
-  width: 100%;
-  padding: 0.5em;
-  /* transform: scale(1.2); */
-  position: relative;
-  top: 15%;
-  background-color: #ffffff;
-  /* border: 1px solid red; */
+    width: 100%;
+    padding: 0.5em;
+    /* transform: scale(1.2); */
+    position: relative;
+    top: 15%;
+    background-color: #ffffff;
+    /* border: 1px solid red; */
 }
 
 /* #date_picker_input {
@@ -85,7 +87,7 @@ html {
 
 #date_picker_calendar {
     min-height: fit-content;
-    box-shadow: 10px 10px 40px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     padding: 12px;
 }
@@ -102,17 +104,17 @@ html {
 */
 
 #calendar_header {
-  width: 100%;
-  min-height: 30px;
-/*   background: pink; */
-  margin-bottom: 8px;
-  color: var(--color-1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    width: 100%;
+    min-height: 30px;
+    /*   background: pink; */
+    margin-bottom: 8px;
+    color: var(--color-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-#cal_title{
+#cal_title {
     color: var(--color-1);
     font-size: 1em;
 }
@@ -144,32 +146,32 @@ html {
 
 #cal_days,
 #calendar_main {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  row-gap: 5px;
-  column-gap: 5px;
-  color: var(--dark-inactive-fg);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 5px;
+    column-gap: 5px;
+    color: var(--dark-inactive-fg);
 }
 
 #cal_days {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #calendar_main {
-  grid-template-rows: repeat(5, min(30px));
+    grid-template-rows: repeat(5, min(30px));
 }
 
 .cell_wrapper {
-/*   background: yellow; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  position: relative;
+    /*   background: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
 }
 
-.cell_item{
+.cell_item {
     font-size: 0.7em;
 }
 
@@ -179,14 +181,14 @@ html {
 }
 
 .current:not(.active):hover {
-  background: var(--dark-hover);
-  color: var(--dark-date-foreground);
-  border: 2px solid var(--dark-selected);
+    background: var(--dark-hover);
+    color: var(--dark-date-foreground);
+    border: 2px solid var(--dark-selected);
 }
 
 .cal-btn:hover,
 .current:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .active {
@@ -195,15 +197,20 @@ html {
 }
 
 .inactive_indicator:after {
-content: '';
-width: 2.15em;
-height: 2px;
-background: var(--color-1);
-position: absolute;
-bottom: 3px;
-left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--color-1);
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 .hidden {
-  visibility: hidden;
+    visibility: hidden;
 }

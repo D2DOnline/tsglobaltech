@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="./modal.css">
   <link rel="stylesheet" href="./date-picker.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
+<!-- <body oncontextmenu="return false;"> -->
 <body>
   <div class="body-content">
     <div id="header-wrapper">
@@ -53,7 +55,7 @@
       </div>
       <div class="intro">
         <p>
-          Located in key destinations across UK, India,
+          Located in key destinations across Uttarakhand, India,
           The Himalayan Majesty strives to offer the best travel and leisure experiences to guests.
           The first pillars of The Himalayan Majesty were laid down by XXXXXXXXX.
           The conceptual bricks of the project were made of virtues centred around an honest, humble and fundamental
@@ -107,7 +109,8 @@
           <div class="check-in">
             <span>Check In</span>
             <span id="checkin_date"></span>
-            <i class="fa fa-calendar" id="checkin"></i>
+            <span id="selected_checkin_date"></span>
+            <i class="fa fa-calendar" id="checkin_calender_button"></i>
             <div id="checkin_calender">
               <div id="date_picker_calendar" class="hidden">
                 <div id="calendar_header">
@@ -131,7 +134,7 @@
             <i class="fa fa-calendar"></i>
           </div>
           <div class="adult">
-            <span>Adult</span>
+            <span>Adult(s)</span>
             <i class="fa fa-user"></i>
           </div>
           <div class="child">
@@ -149,7 +152,7 @@
     </div> <!-- End Modal-->
 
 
-    <div id="date_picker">
+    <!-- <div id="date_picker">
       <div id="date_picker_calendar" class="hidden">
         <div id="calendar_header">
           <span class="cal-btn back">
@@ -165,7 +168,7 @@
           <div id="calendar_main"></div>
         </div>
       </div>
-    </div> <!-- End of date-picker -->
+    </div> -->
 
   </div>
 
