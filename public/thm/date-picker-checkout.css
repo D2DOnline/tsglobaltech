@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --dark-body-bg: #232429;
     --light-body-bg: #F5F7FB;
 
@@ -17,9 +17,9 @@
     --dark-hover: #2C437B;
     --dark-arrows-bg: #B0B8CC;
     --dark-arrows-fill: #333641;
-}
+} */
 
-html {
+/* html {
     box-sizing: border-box;
 }
 
@@ -27,7 +27,7 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-}
+} */
 
 /* body {
   height: 100vh;
@@ -35,7 +35,7 @@ html {
   font-family: Helvetica, sans-serif;
 } */
 
-#date_picker {
+#date_picker1 {
     width: 100%;
     padding: 0.5em;
     /* transform: scale(1.2); */
@@ -85,12 +85,14 @@ html {
   transform: rotate(180deg);
 } */
 
-#date_picker_calendar {
+#date_picker_calendar1 {
     min-height: fit-content;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     padding: 12px;
+}
 
+#date_picker_calendar1 {
     /* border-radius: 15px; */
     background: var(--color-white);
     width: 100%;
@@ -101,7 +103,7 @@ html {
 * calendar body
 */
 
-#calendar_header {
+#calendar_header1 {
     width: 100%;
     min-height: 30px;
     /*   background: pink; */
@@ -112,12 +114,12 @@ html {
     justify-content: space-between;
 }
 
-#cal_title {
+#cal_title1 {
     color: var(--color-1);
     font-size: 1em;
 }
 
-.cal-btn {
+.cal-btn1 {
     width: 1.5em;
     height: 1.5em;
     border: none;
@@ -142,8 +144,8 @@ html {
   transform: rotate(-90deg);
 } */
 
-#cal_days,
-#calendar_main {
+#cal_days1,
+#calendar_main1 {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     row-gap: 5px;
@@ -151,16 +153,16 @@ html {
     color: var(--dark-inactive-fg);
 }
 
-#cal_days {
+#cal_days1 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#calendar_main {
+#calendar_main1 {
     grid-template-rows: repeat(5, min(30px));
 }
 
-.cell_wrapper {
+.cell_wrapper1 {
     /*   background: yellow; */
     display: flex;
     justify-content: center;
@@ -169,32 +171,32 @@ html {
     position: relative;
 }
 
-.cell_item {
+.cell_item1 {
     font-size: 0.7em;
 }
 
-.current {
+.current1 {
     color: var(--color-3);
     border: 0.5px solid var(--color-3);
 }
 
-.current:not(.active):hover {
+.current1:not(.active1):hover {
     background: var(--dark-hover);
     color: var(--dark-date-foreground);
     border: 2px solid var(--dark-selected);
 }
 
-.cal-btn:hover,
-.current:hover {
+.cal-btn1:hover,
+.current1:hover {
     cursor: pointer;
 }
 
-.active {
+.active1 {
     background: var(--color-1);
     color: var(--color-white);
 }
 
-.inactive_indicator:after {
+.inactive_indicator1:after {
     content: '';
     width: 100%;
     height: 2px;

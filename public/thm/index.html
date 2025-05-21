@@ -7,11 +7,13 @@
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./modal.css">
   <link rel="stylesheet" href="./date-picker.css">
+  <link rel="stylesheet" href="./date-picker-checkout.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <!-- <body oncontextmenu="return false;"> -->
+
 <body>
   <div class="body-content">
     <div id="header-wrapper">
@@ -67,6 +69,37 @@
       </div>
     </div>
 
+    <div id="location-wrapper">
+      <div class="title">
+        <p>Exotic Location</p>
+      </div>
+      <div class="location">
+        <img src="./location.jpg">
+        <p>
+          The Himalayan Majesty strives to establish a presence in the most immaculate locations. Also providing a space where you
+          can experience homely comforts, along with pleasant surroundings.
+        </p>
+        <div class="location-button">
+          <button class="primary-button"><span>Explore Nearby</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="room-wrapper">
+      <div class="title">
+        <p>Rooms</p>
+      </div>
+      <div class="room">
+        <img src="./room.jpg">
+        <p>
+          The Himalayan Majesty offers opulent rooms along with beautifully decorated interiors that allow our patrons to kick back and relax!
+        </p>
+        <div class="room-button">
+          <button class="primary-button"><span>Explore Rooms</span></button>
+        </div>
+      </div>
+    </div>
+
     <div id="footer-wrapper">
       <footer class="footer">
         <div class="logo">
@@ -103,16 +136,17 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close-booknow-model">&times;</span>
-          <div class="model-title">Book Your Stay</div>
+          <div class="model-title" onclick="alert()">Book Your Stay</div>
         </div>
         <div class="modal-body">
           <div class="check-in">
             <span>Check In</span>
-            <span id="checkin_date"></span>
-            <span id="selected_checkin_date"></span>
-            <i class="fa fa-calendar" id="checkin_calender_button"></i>
-            <div id="checkin_calender">
-              <div id="date_picker_calendar" class="hidden">
+            <span>
+              <span id="selected_checkin_date"></span>
+              <i class="fa fa-calendar" id="checkin_calender_button"></i>
+            </span>
+            <div id="checkin_calender" class="hidden">
+              <div id="date_picker_calendar">
                 <div id="calendar_header">
                   <span class="cal-btn back">
                     <i class="fa fa-arrow-left" aria-hidden="true"></i>
@@ -131,15 +165,51 @@
           </div>
           <div class="check-out">
             <span>Check Out</span>
-            <i class="fa fa-calendar"></i>
+            <span>
+              <span id="selected_checkout_date"></span>
+              <i class="fa fa-calendar" id="checkout_calender_button"></i>
+            </span>
+            <div id="checkout_calender" class="hidden">
+              <div id="date_picker_calendar1">
+                <div id="calendar_header1">
+                  <span class="cal-btn1 back1">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                  </span>
+                  <span id="cal_title1"></span>
+                  <span class="cal-btn1 front1">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div id="cal_wrapper1">
+                  <div id="cal_days1"></div>
+                  <div id="calendar_main1"></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="adult">
             <span>Adult(s)</span>
-            <i class="fa fa-user"></i>
+            <span>
+              <span id="selected_adults_data"></span>
+              <i class="fa fa-user" id="adults_selection_button"></i>
+            </span>
+            <div id="adults_selection_box" class="dropdown-box hidden">
+              <p class="dropdown-item adults_data" data-value="1">1</p>
+              <p class="dropdown-item adults_data" data-value="2">2</p>
+              <p class="dropdown-item adults_data" data-value="3">3</p>
+              <p class="dropdown-item adults_data" data-value="4">4</p>
+            </div>
           </div>
           <div class="child">
             <span>Child</span>
-            <i class="fa fa-child"></i>
+            <span>
+              <span id="selected_child_data"></span>
+              <i class="fa fa-child" id="child_selection_button"></i>
+            </span>
+            <div id="child_selection_box" class="dropdown-box hidden">
+              <p class="dropdown-item child_data" data-value="1">1</p>
+              <p class="dropdown-item child_data" data-value="2">2</p>
+            </div>
           </div>
         </div>
         <div class="modal-footer">
@@ -175,6 +245,7 @@
   <script src="./scripts.js"></script>
   <script src="./model.js"></script>
   <script src="./date-picker.js"></script>
+  <script src="./date-picker-checkout.js"></script>
 </body>
 
 </html>

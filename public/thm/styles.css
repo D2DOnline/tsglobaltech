@@ -1,56 +1,144 @@
 :root {
-    --color-1:#b51e25;
-    --color-2:#680e0e;
-    --color-3:#605a5a;
-    --color-4:#e9ec9d;
-    --color-white:#FFFFFF;
-    --color-black:#000000;
+    --color-1: #b51e25;
+    --color-2: #680e0e;
+    --color-3: #605a5a;
+    --color-4: #e9ec9d;
+    --color-5:rgb(181, 30, 37, 0.1);
+    --color-white: #FFFFFF;
+    --color-black: #000000;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
-    font-family:'Times New Roman', Times, serif;
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.02em;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* ******************************** */
@@ -77,16 +165,17 @@ footer,
     top:0; */
 }
 
-header{
-    box-shadow: 0 0.3em 0.2em rgba(39,39,39,.2);
+header {
+    box-shadow: 0 0.3em 0.2em rgba(39, 39, 39, .2);
     width: 100%;
     background-color: var(--color-white);
 }
+
 header {
     margin: 0 0 0.2em 0;
 }
 
-.logo img{
+.logo img {
     height: 6em;
 }
 
@@ -105,21 +194,21 @@ header {
     justify-content: center;
 }
 
-.banner
-img {
+.banner img {
     width: 100%;
     height: 200px;
 }
+
 /* Banner End*/
 
 /* Menu strip */
-#menu-wrapper{
+#menu-wrapper {
     display: flex;
     background-color: var(--color-1);
     justify-content: space-between;
     padding: 0.8em;
     position: sticky;
-    top:0;
+    top: 0;
 }
 
 .menu-item,
@@ -127,7 +216,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color:var(--color-4);
+    color: var(--color-4);
     font-size: 1em;
     cursor: pointer;
 }
@@ -136,37 +225,53 @@ img {
     font-size: large;
 }
 
-.menu-item i { 
+.menu-item i {
     margin: 0.2em;
 }
 
 /* Intro */
-.title p{
+.title{
     font-size: 1.7em;
     color: var(--color-1);
     margin: 0.8em;
 }
 
-#intro-wrapper {
+#intro-wrapper,
+#location-wrapper,
+#room-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.intro p {
-    padding:0 1em;
+#location-wrapper {
+    background-color: var(--color-5);
+}
+
+.location,
+.room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro p, .location p, .room p {
+    padding: 0 1em;
     font-size: 1.3em;
     line-height: 1.5em;
     color: var(--color-3);
     text-align: justify;
 }
 
-.intro .intro-button {
+.intro .intro-button, .location .location-button, .room .room-button {
     display: flex;
     justify-content: center;
     margin: 0.5em;
 }
-.primary-button{
+
+
+
+.primary-button {
     background-color: var(--color-1);
     color: var(--color-4);
     padding: 0.5em 1.5em;
@@ -180,6 +285,7 @@ img {
 #footer-wrapper {
     background-color: var(--color-black);
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -225,9 +331,9 @@ footer {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 3.5em;
-  }
-  
-  .side-nav a {
+}
+
+.side-nav a {
     padding: 0.5em 0.5em 0.5em 2em;
     text-decoration: none;
     font-size: 1em;
@@ -235,30 +341,35 @@ footer {
     display: block;
     transition: 0.3s;
     white-space: nowrap;
-  }
-  
-  .side-nav a:hover {
+}
+
+.side-nav a:hover {
     color: var(--color-white);
-  }
-  
-  .side-nav .closebtn {
+}
+
+.side-nav .closebtn {
     position: absolute;
     top: 0.2em;
     right: 0.5em;
     font-size: 2.5em;
     color: var(--color-4);
-  }
-  
-  @media screen and (max-height: 450px) {
-    .side-nav {padding-top: 1em;}
-    .side-nav a {font-size: 1.5em;}
-  }
+}
 
-  /* Book Now */
-  .check-in,
-  .check-out,
-  .adult,
-  .child {
+@media screen and (max-height: 450px) {
+    .side-nav {
+        padding-top: 1em;
+    }
+
+    .side-nav a {
+        font-size: 1.5em;
+    }
+}
+
+/* Book Now */
+.check-in,
+.check-out,
+.adult,
+.child {
     width: 100%;
     margin: 0.5em 0em;
     display: flex;
@@ -268,20 +379,57 @@ footer {
     border-bottom: 1px solid var(--color-1);
     color: var(--color-3);
     position: relative;
-  }
+}
 
-  #checkin_calender{
+#adults_selection_box,
+#child_selection_box,
+#checkin_calender,
+#checkout_calender {
     position: absolute;
-    top:1.8em;
+    top: 1.8em;
     z-index: 1;
     width: 100%;
-  }
+}
 
-  #selected_checkin_date {
+#selected_checkin_date,
+#selected_checkout_date,
+#selected_adults_data,
+#selected_child_data
+ {
     color: var(--color-2);
-  }
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.hidden {
+    visibility: hidden;
+    /* display: none; */
+}
 
 
-@media screen {
-    
+.dropdown-box {
+    min-height: fit-content;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 12px;
+
+    /* border-radius: 15px; */
+    background: var(--color-white);
+    width: 100%;
+    box-shadow: 0px 0em 0.2em var(--color-black);
+}
+
+.dropdown-item {
+    text-align: right;
+    margin: 0.5em 0;
+}
+
+.dropdown-item:first-child {
+    margin-top: 0;
+}
+.dropdown-item:last-child {
+    margin-bottom: 0;
 }

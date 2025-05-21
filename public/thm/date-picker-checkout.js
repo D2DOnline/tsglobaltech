@@ -4,12 +4,13 @@
  * Into vanilla JS for project
  */
 
-const calendar = document.querySelector("#calendar_main"),
-    input = document.querySelector("#checkin_calender_button"),
-    calHeader = document.querySelector("#calendar_header"),
-    calHeaderTitle = document.querySelector("#calendar_header #cal_title"),
-    calDays = document.querySelector("#cal_days"),
-    selected_date = document.querySelector("#selected_checkin_date"),
+function dt2(){
+const calendar = document.querySelector("#calendar_main1"),
+    input = document.querySelector("#checkout_calender_button"),
+    calHeader = document.querySelector("#calendar_header1"),
+    calHeaderTitle = document.querySelector("#calendar_header1 #cal_title1"),
+    calDays = document.querySelector("#cal_days1"),
+    selected_date = document.querySelector("#selected_checkout_date"),
     days = [
         "Sunday",
         "Monday",
@@ -118,16 +119,16 @@ let monthDetails = getMonthDetails(year, month);
 const isCurrentDay = (day, cell) => {
     if (day.timestamp === todayTimestamp) {
         // cell.classList.add("active");
-        cell.classList.add("isCurrent");
-        cell.classList.add("inactive_indicator");
+        cell.classList.add("isCurrent1");
+        cell.classList.add("inactive_indicator1");
     }
 };
 
 // Checks if day is one selected
 const isSelectedDay = (day, cell) => {
     if (day.timestamp === selectedDay) {
-        cell.classList.add("active");
-        cell.classList.add("isSelected");
+        cell.classList.add("active1");
+        cell.classList.add("isSelected1");
     }
 };
 
@@ -192,9 +193,9 @@ for (let i = 0; i < days.length; i++) {
     let div = document.createElement("div"),
         span = document.createElement("span");
 
-    div.classList.add("cell_wrapper");
+    div.classList.add("cell_wrapper1");
     // div.classList.add("cal_days");
-    span.classList.add("cell_item");
+    span.classList.add("cell_item1");
 
     span.innerText = days[i].slice(0, 2);
 
@@ -209,11 +210,11 @@ const setCalBody = (monthDetails) => {
         let div = document.createElement("div"),
             span = document.createElement("span");
 
-        div.classList.add("cell_wrapper");
-        div.classList.add("cal_date");
-        monthDetails[i].month === 0 && monthDetails[i].timestamp >= todayTimestamp && div.classList.add("current");
+        div.classList.add("cell_wrapper1");
+        div.classList.add("cal_date1");
+        monthDetails[i].month === 0 && monthDetails[i].timestamp >= todayTimestamp && div.classList.add("current1");
         monthDetails[i].month === 0 && isCurrentDay(monthDetails[i], div);
-        span.classList.add("cell_item");
+        span.classList.add("cell_item1");
 
         span.innerText = monthDetails[i].date;
 
@@ -226,10 +227,10 @@ setCalBody(monthDetails);
 
 const updateCalendar = (btn) => {
     let newCal, offset;
-    if (btn.classList.contains("back")) {
+    if (btn.classList.contains("back1")) {
         // let { year, month, monthDetails } = setHeaderNav(-1);
         offset = -1;
-    } else if (btn.classList.contains("front")) {
+    } else if (btn.classList.contains("front1")) {
         // let { year, month, monthDetails } = setHeaderNav(1);
         offset = 1;
     }
@@ -242,12 +243,12 @@ const updateCalendar = (btn) => {
 
 // Only one calendar date is selected
 const selectOnClick = () => {
-    document.querySelectorAll(".cell_wrapper").forEach((cell) => {
-        cell.classList.contains("isSelected") && cell.classList.remove("active");
+    document.querySelectorAll(".cell_wrapper1").forEach((cell) => {
+        cell.classList.contains("isSelected1") && cell.classList.remove("active1");
 
-        if (cell.classList.contains("isCurrent") &&
-            !cell.classList.contains("active")) {
-            cell.querySelector("span").classList.add("inactive_indicator");
+        if (cell.classList.contains("isCurrent1") &&
+            !cell.classList.contains("active1")) {
+            cell.querySelector("span").classList.add("inactive_indicator1");
         }
     });
 
@@ -255,15 +256,15 @@ const selectOnClick = () => {
 
 
 const updateInput = () => {
-    let currentDay = document.querySelector(".isCurrent");
+    let currentDay = document.querySelector(".isCurrent1");
 
     // Update input based on clicked cell
-    document.querySelectorAll(".cell_wrapper").forEach((cell) => {
-        if (cell.classList.contains("current")) {
+    document.querySelectorAll(".cell_wrapper1").forEach((cell) => {
+        if (cell.classList.contains("current1")) {
             cell.addEventListener("click", (e) => {
                 let cell_date = e.target.textContent;
 
-                currentDay !== null && currentDay.classList.remove("active");
+                currentDay !== null && currentDay.classList.remove("active1");
 
                 for (let i = 0; i < monthDetails.length; i++) {
                     if (monthDetails[i].month === 0) {
@@ -274,8 +275,8 @@ const updateInput = () => {
 
                             isSelectedDay(monthDetails[i], cell);
 
-                            cell.querySelector('span').classList.contains('inactive_indicator')
-                                && cell.querySelector('span').classList.remove('inactive_indicator');
+                            cell.querySelector('span').classList.contains('inactive_indicator1')
+                                && cell.querySelector('span').classList.remove('inactive_indicator1');
                         }
                     }
                 }
@@ -287,7 +288,7 @@ const updateInput = () => {
 updateInput();
 
 // Set header nav actions
-document.querySelectorAll(".cal-btn").forEach((btn) => {
+document.querySelectorAll(".cal-btn1").forEach((btn) => {
     btn.addEventListener("click", () => {
         updateCalendar(btn);
         updateInput();
@@ -296,7 +297,7 @@ document.querySelectorAll(".cal-btn").forEach((btn) => {
 });
 
 const enableDisableMonthNavigation = () => {
-    var back_btn = document.querySelectorAll(".cal-btn.back");
+    var back_btn = document.querySelectorAll(".cal-btn1.back1");
     if (month === new Date().getMonth()) {
         back_btn.forEach((btn) => {
             btn.classList.add("disabled");
@@ -310,6 +311,8 @@ const enableDisableMonthNavigation = () => {
 }
 
 enableDisableMonthNavigation()
+}
+dt2()
 
 // input.addEventListener('click', () => {
 //     document.querySelector('#date_picker_calendar').classList.toggle('hidden');
