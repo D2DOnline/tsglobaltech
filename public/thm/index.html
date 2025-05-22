@@ -21,8 +21,40 @@
         <div class="logo">
           <img src="./logo-transparent.png" alt="logo" />
         </div>
-        <div class="menubar"></div>
-        <div class="sign-in"></div>
+        <div class="menubar">
+          <div class="menu-item">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <span>Home</span>
+          </div>
+          <div class="menu-item">
+            <i class="fa fa-hotel" aria-hidden="true"></i>
+            <span>Rooms</span>
+          </div>
+          <div class="menu-item">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>Nearby</span>
+          </div>
+          <div class="menu-item">
+            <i class="fa fa-picture-o" aria-hidden="true"></i>
+            <span>Gallery</span>
+          </div>
+          <div class="menu-item">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <span>About Us</span>
+          </div>
+          <div class="menu-item">
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <span>Contact Us</span>
+          </div>
+          <div class="menu-item">
+            <i class="fa fa-question-circle" aria-hidden="true"></i>
+            <span>FAQs</span>
+          </div>
+          <div class="menu-item sign-in">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <span>Sign-in</span>
+          </div>
+        </div>
       </header>
     </div> <!-- End of header-wrapper -->
 
@@ -32,7 +64,7 @@
       </div>
     </div> <!-- End of banner-wrapper -->
 
-    <div id="menu-wrapper">
+    <div id="menu-strip-wrapper">
       <div class="menu-item menu-icon" onclick="openNav()">
         <i class="fa fa-bars" aria-hidden="true"></i>
         <span>Menu</span>
@@ -56,15 +88,20 @@
         <p>The Himalayan Majesty</p>
       </div>
       <div class="intro">
-        <p>
-          Located in key destinations across Uttarakhand, India,
-          The Himalayan Majesty strives to offer the best travel and leisure experiences to guests.
-          The first pillars of The Himalayan Majesty were laid down by XXXXXXXXX.
-          The conceptual bricks of the project were made of virtues centred around an honest, humble and fundamental
-          mission - to bestow a home-away-from-home feeling.
-        </p>
-        <div class="intro-button">
-          <button class="primary-button"><span>Explore</span></button>
+        <div class="intro-img">
+          <img src="./logo-transparent.png" />
+        </div>
+        <div class="intro-description">
+          <p>
+            Located in key destinations across Uttarakhand, India,
+            The Himalayan Majesty strives to offer the best travel and leisure experiences to guests.
+            The first pillars of The Himalayan Majesty were laid down by XXXXXXXXX.
+            The conceptual bricks of the project were made of virtues centred around an honest, humble and fundamental
+            mission - to bestow a home-away-from-home feeling.
+          </p>
+          <div class="intro-button">
+            <button class="primary-button"><span>Explore More</span></button>
+          </div>
         </div>
       </div>
     </div>
@@ -74,14 +111,20 @@
         <p>Exotic Location</p>
       </div>
       <div class="location">
-        <img src="./location.jpg">
-        <p>
-          The Himalayan Majesty strives to establish a presence in the most immaculate locations. Also providing a space where you
-          can experience homely comforts, along with pleasant surroundings.
-        </p>
-        <div class="location-button">
-          <button class="primary-button"><span>Explore Nearby</span></button>
+        <div class="location-img">
+          <img src="./location.jpg">
         </div>
+        <div class="location-description">
+          <p>
+            The Himalayan Majesty strives to establish a presence in the most immaculate locations. Also providing a space
+            where you
+            can experience homely comforts, along with pleasant surroundings.
+          </p>
+          <div class="location-button">
+            <button class="primary-button"><span>Explore Nearby</span></button>
+          </div>
+        </div>
+        
       </div>
     </div>
 
@@ -90,12 +133,17 @@
         <p>Rooms</p>
       </div>
       <div class="room">
-        <img src="./room.jpg">
-        <p>
-          The Himalayan Majesty offers opulent rooms along with beautifully decorated interiors that allow our patrons to kick back and relax!
-        </p>
-        <div class="room-button">
-          <button class="primary-button"><span>Explore Rooms</span></button>
+        <div class="room-img">
+          <img src="./room.jpg">
+        </div>
+        <div class="room-description">
+          <p>
+            The Himalayan Majesty offers opulent rooms along with beautifully decorated interiors that allow our patrons
+            to kick back and relax!
+          </p>
+          <div class="room-button">
+            <button class="primary-button"><span>Explore Rooms</span></button>
+          </div>
         </div>
       </div>
     </div>
@@ -123,8 +171,8 @@
       <span class="closebtn" onclick="closeNav()">&times;</span>
       <a href="#"><span>Home</span></a>
       <a href="#"><span></span>Rooms</span></a>
-      <a href="#"><span>Near By</span></a>
-      <a href="#"><span>Galary</span></a>
+      <a href="#"><span>Nearby</span></a>
+      <a href="#"><span>Gallery</span></a>
       <a href="#"><span>About Us</span></a>
       <a href="#"><span>Contact Us</span></a>
       <a href="#"><span>FAQs</a>
