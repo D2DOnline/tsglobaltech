@@ -452,6 +452,13 @@ footer {
 .dropdown-item {
     text-align: right;
     margin: 0.5em 0;
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background: var(--color-1);
+    color: var(--color-white);
 }
 
 .dropdown-item:first-child {
@@ -462,96 +469,56 @@ footer {
     margin-bottom: 0;
 }
 
-@media screen and (min-width: 1024px) {
-    #header-wrapper {
-        position: sticky;
-        top: 0;
-    }
-
-    header {
-        justify-content: space-between;
-        padding: 0 8%;
-        position: sticky;
-        top: 0;
-    }
-
-    #menu-strip-wrapper {
-        display: none;
-    }
-
-    .menubar {
-        display: flex;
-        align-items: center;
-    }
-
-    .menubar .menu-item {
-        color: var(--color-3);
-        margin: 0 1em;
-    }
-
-    .menubar .menu-item.sign-in {
-        color: var(--color-1);
-        padding: 0.6em;
-        border-radius: 0.5em;
-        border: 0.1em solid var(--color-1);
-    }
-
-    .menubar .menu-item.sign-in:hover {
-        color: var(--color-4);
-        background-color: var(--color-1);
-        padding: 0.6em;
-        border-radius: 0.5em;
-        border: 0.1em solid var(--color-1);
-    }
-
-    .menubar .menu-item:hover {
-        color: var(--color-1);
-    }
-
-    .banner img {
-        height: 400px;
-    }
-
-    #intro-wrapper,
-    #location-wrapper,
-    #room-wrapper {
-        padding: 0 8%;
-    }
-
-    .intro,
-    .room {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .location {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .intro .intro-img,
-    .room .room-img
-     {
-        display: flex;
-        justify-content: end;
-    }
-
-    .location .location-img {
-        display: flex;
-        justify-content: start;
-    }
-    .intro .intro-img img,
-    .location .location-img img,
-    .room .room-img img
-    {
-        height: 15em;
-        box-shadow: 0px 0em 1em 16px rgb(24 23 23 / 38%);
-    }
-    .intro .intro-img, .intro .intro-description,
-    .location .location-img, .location .location-description,
-    .room .room-img, .room .room-description {
-        width: 50%;
-        margin-bottom: 2em;
-
-    }
+.booknow-lg {
+    display: none;
 }
+
+#checkin_calender_button,
+#checkout_calender_button,
+#adults_selection_button,
+#child_selection_button{
+    cursor: pointer;
+}
+
+#checkin_calender_button:hover,
+#checkout_calender_button:hover,
+#adults_selection_button:hover,
+#child_selection_button:hover{
+    color: var(--color-1);
+}
+
+#banner-wrapper {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.full {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+  }
+.zoom {
+    animation: scale 30s linear infinite;
+    z-index: -9;
+    overflow: hidden;
+  }
+    
+  @keyframes scale {
+    50% {
+      -webkit-transform:scale(1.2);
+      -moz-transform:scale(1.2);
+      -ms-transform:scale(1.2);
+      -o-transform:scale(1.2);
+      transform:scale(1.2);
+    }
+  }
+

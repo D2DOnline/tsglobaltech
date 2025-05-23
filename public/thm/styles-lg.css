@@ -1,0 +1,101 @@
+@media screen and (min-width: 1024px) {
+    #header-wrapper {
+        position: sticky;
+        top: 0;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0 8%;
+        position: sticky;
+        top: 0;
+    }
+
+    #menu-strip-wrapper {
+        display: none;
+    }
+
+    .menubar {
+        display: flex;
+        align-items: center;
+    }
+
+    .menubar .menu-item {
+        color: var(--color-3);
+        margin: 0 1em;
+    }
+
+    .menubar .menu-item.sign-in {
+        color: var(--color-1);
+        padding: 0.6em;
+        border-radius: 0.5em;
+        border: 0.1em solid var(--color-1);
+    }
+
+    .menubar .menu-item.sign-in:hover {
+        color: var(--color-4);
+        background-color: var(--color-1);
+        padding: 0.6em;
+        border-radius: 0.5em;
+        border: 0.1em solid var(--color-1);
+    }
+
+    .menubar .menu-item:hover {
+        color: var(--color-1);
+    }
+
+    .banner img {
+        height: 400px;
+    }
+
+    #intro-wrapper,
+    #location-wrapper,
+    #room-wrapper {
+        padding: 0 8%;
+    }
+
+    .intro,
+    .room {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .location {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .intro .intro-img,
+    .room .room-img
+     {
+        display: flex;
+        justify-content: end;
+    }
+
+    .location .location-img {
+        display: flex;
+        justify-content: start;
+    }
+    .intro .intro-img img,
+    .location .location-img img,
+    .room .room-img img
+    {
+        height: 15em;
+        box-shadow: 0px 0em 1em 16px rgb(24 23 23 / 38%);
+    }
+    .intro .intro-img, .intro .intro-description,
+    .location .location-img, .location .location-description,
+    .room .room-img, .room .room-description {
+        width: 50%;
+        margin-bottom: 2em;
+
+    }
+
+    .booknow-lg {
+        display: flex;
+        position: fixed;
+        top: 15em;
+        left: -2.7em;
+        transform: rotate(-90deg);
+    }
+}

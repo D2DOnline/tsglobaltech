@@ -25,7 +25,8 @@
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    max-width: 25em;
   }
   
   /* Add Animation */
@@ -74,4 +75,10 @@
     font-size: 1.7em;
     color: var(--color-1);
     margin-top: 2em;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .modal-content {
+      width: 35%;
+    }
   }
