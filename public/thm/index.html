@@ -51,7 +51,7 @@
             <i class="fa fa-question-circle" aria-hidden="true"></i>
             <span>FAQs</span>
           </div>
-          <div class="menu-item sign-in">
+          <div class="menu-item sign-in" id="signInLg">
             <i class="fa fa-user-circle" aria-hidden="true"></i>
             <span>Sign-in</span>
           </div>
@@ -117,7 +117,8 @@
         </div>
         <div class="location-description">
           <p>
-            The Himalayan Majesty strives to establish a presence in the most immaculate locations. Also providing a space
+            The Himalayan Majesty strives to establish a presence in the most immaculate locations. Also providing a
+            space
             where you
             can experience homely comforts, along with pleasant surroundings.
           </p>
@@ -125,7 +126,7 @@
             <button class="primary-button"><span>Explore Nearby</span></button>
           </div>
         </div>
-        
+
       </div>
     </div>
 
@@ -170,13 +171,41 @@
 
     <div id="sidenav" class="side-nav">
       <span class="closebtn" onclick="closeNav()">&times;</span>
-      <a href="#"><span>Home</span></a>
-      <a href="#"><span></span>Rooms</span></a>
-      <a href="#"><span>Nearby</span></a>
-      <a href="#"><span>Gallery</span></a>
-      <a href="#"><span>About Us</span></a>
-      <a href="#"><span>Contact Us</span></a>
-      <a href="#"><span>FAQs</a>
+      
+      <div class="menu-item">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span class="menu-name">Home</span>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-hotel" aria-hidden="true"></i>
+        <span class="menu-name">Rooms</span>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+        <span class="menu-name">Nearby</span>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-picture-o" aria-hidden="true"></i>
+        <span class="menu-name">Gallery</span>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+        <span class="menu-name">About Us</span>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-address-book" aria-hidden="true"></i>
+        <span class="menu-name">Contact Us</span>
+      </div>
+      <div class="menu-item">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+        <span class="menu-name">FAQs</span>
+      </div>
+      <div class="menu-item sign-in" id="signIn">
+        <i class="fa fa-user-circle" aria-hidden="true"></i>
+        <span class="menu-name">Sign-in</span>
+      </div>
+    </div>
+     
     </div> <!-- End of side-nav -->
 
     <!-- The Modal -->
@@ -185,7 +214,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <span class="close-booknow-model">&times;</span>
-          <div class="model-title" >Book Your Stay</div>
+          <div class="model-title">Book Your Stay</div>
         </div>
         <div class="modal-body">
           <div class="check-in">
@@ -270,6 +299,44 @@
 
     </div> <!-- End Modal-->
 
+    <!-- The Modal -->
+    <div id="signInModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-sign-in-model">&times;</span>
+          <div class="model-title">Sign In</div>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="input-field">
+              <input class="form-input" type="text" autofocus/>
+              <label class="field-label">User Id</label>
+            </div>
+            <div class="input-field">
+              <input class="form-input" type="password" />
+              <label class="field-label">Password</label>
+            </div>
+            <div class="form-field signin-as">
+              <label class="radio-container">Vender
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="radio-container">Employee
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button class="primary-button">
+            <span>Sign In</span>
+          </button>
+        </div>
+        </form>
+      </div>
+
+    </div> <!-- End Modal-->
 
     <div class="booknow-lg" id="booknowLg">
       <div class="booknow-lg-container">
@@ -283,6 +350,7 @@
 
   <script src="./scripts.js"></script>
   <script src="./model.js"></script>
+  <script src="./model-signin.js"></script>
   <script src="./date-picker.js"></script>
   <script src="./date-picker-checkout.js"></script>
 </body>

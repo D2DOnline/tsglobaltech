@@ -21,8 +21,16 @@
     }
 
     .menubar .menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         color: var(--color-3);
         margin: 0 1em;
+        cursor: pointer;
+    }
+
+    .menubar .menu-item i{
+        margin: 0.3em;
     }
 
     .menubar .menu-item.sign-in {

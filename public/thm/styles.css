@@ -161,8 +161,7 @@ footer,
 }
 
 #header-wrapper {
-    /* position: sticky;
-    top:0; */
+    z-index: 1;
 }
 
 header {
@@ -211,8 +210,8 @@ header {
     top: 0;
 }
 
-.menu-item,
-.menu-item a {
+#menu-strip-wrapper .menu-item,
+#menu-strip-wrapper .menu-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,13 +220,15 @@ header {
     cursor: pointer;
 }
 
-.menu-item a {
+#menu-strip-wrapper .menu-item a {
     font-size: large;
 }
 
-.menu-item i {
+#menu-strip-wrapper .menu-item i {
     margin: 0.2em;
 }
+
+
 
 /* Intro */
 .title {
@@ -263,7 +264,7 @@ header {
 .location .location-description p,
 .room .room-description p {
     padding: 0 1em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5em;
     color: var(--color-3);
     text-align: justify;
@@ -278,15 +279,14 @@ header {
 }
 
 .location .location-img,
-.room .room-img
-{
-display: flex;
-justify-content: center;
-margin-bottom: 1em;
+.room .room-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
 }
+
 .location .location-img img,
-.room .room-img img
-{
+.room .room-img img {
     width: 80%;
     height: 15em;
     box-shadow: 0px 0em 1em 10px rgb(24 23 23 / 38%);
@@ -296,13 +296,21 @@ margin-bottom: 1em;
     background-color: var(--color-1);
     color: var(--color-4);
     padding: 0.5em 1.5em;
-    border: none;
     font-size: 1em;
     cursor: pointer;
     border: 0.1em solid var(--color-4);
 }
 
-.primary-button:hover{
+.secondary-button {
+    background-color: var(--color-white);
+    color: var(--color-1);
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0.1em solid var(--color-4);
+}
+
+.primary-button:hover {
     background: var(--color-white);
     border: 0.1em solid var(--color-1);
     color: var(--color-1);
@@ -361,17 +369,26 @@ footer {
     padding-top: 3.5em;
 }
 
-.side-nav a {
-    padding: 0.5em 0.5em 0.5em 2em;
+.side-nav .menu-item {
+    padding: 0.5em 0.5em 0.7em 2em;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.3em;
     color: var(--color-4);
     display: block;
     transition: 0.3s;
     white-space: nowrap;
 }
 
-.side-nav a:hover {
+.side-nav i {
+    font-size: 0.8em;
+    width: 1em;
+}
+
+.side-nav .menu-name {
+    padding-left: 0.5em;
+}
+
+.side-nav .menu-item:hover {
     color: var(--color-white);
 }
 
@@ -383,15 +400,7 @@ footer {
     color: var(--color-4);
 }
 
-@media screen and (max-height: 450px) {
-    .side-nav {
-        padding-top: 1em;
-    }
 
-    .side-nav a {
-        font-size: 1.5em;
-    }
-}
 
 /* Book Now */
 .check-in,
@@ -402,7 +411,7 @@ footer {
     margin: 0.5em 0em;
     display: flex;
     justify-content: space-between;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding: 0.5em 0;
     border-bottom: 1px solid var(--color-1);
     color: var(--color-3);
@@ -476,22 +485,22 @@ footer {
 #checkin_calender_button,
 #checkout_calender_button,
 #adults_selection_button,
-#child_selection_button{
+#child_selection_button {
     cursor: pointer;
 }
 
 #checkin_calender_button:hover,
 #checkout_calender_button:hover,
 #adults_selection_button:hover,
-#child_selection_button:hover{
+#child_selection_button:hover {
     color: var(--color-1);
 }
 
 #banner-wrapper {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  overflow: hidden;
-  position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -505,20 +514,126 @@ footer {
     right: 0;
     margin: auto;
     display: block;
-  }
+}
+
 .zoom {
     animation: scale 30s linear infinite;
     z-index: -9;
     overflow: hidden;
-  }
-    
-  @keyframes scale {
-    50% {
-      -webkit-transform:scale(1.2);
-      -moz-transform:scale(1.2);
-      -ms-transform:scale(1.2);
-      -o-transform:scale(1.2);
-      transform:scale(1.2);
-    }
-  }
+}
 
+@keyframes scale {
+    50% {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.signin-as {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form */
+form .input-field {
+    position: relative;
+}
+form .input-field input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2em;
+    color: var(--color-3);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--color-1);
+    outline: none;
+    background: transparent;
+}
+
+form .field-label {
+    padding: 10px 0;
+    font-size: 1.2em;
+    color: var(--color-3);
+    pointer-events: none;
+}
+
+form .input-field label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+/* form .input-field input:valid ~ label  */
+form .input-field input:focus ~ label
+{
+  top: -20px;
+  left: 0;
+  color: var(--color-3);
+  font-size: 1em;
+}
+
+/* Radio button */
+.radio-container {
+    position: relative;
+    padding-left: 35px;
+    margin: 1em;
+    cursor: pointer;
+    font-size: 1.2em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.2em;
+    width: 1.2em;
+    background-color: var(--color-3);
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .radio-container:hover input ~ .checkmark {
+    background-color: var(--color-1);
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .radio-container input:checked ~ .checkmark {
+    background-color: var(--color-1);
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .radio-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .radio-container .checkmark:after {
+       top: 0.3em;
+      left: 0.3em;
+      width: 0.6em;
+      height: 0.6em;
+      border-radius: 50%;
+      background: white;
+  }
