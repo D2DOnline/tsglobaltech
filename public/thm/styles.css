@@ -299,6 +299,7 @@ header {
     font-size: 1em;
     cursor: pointer;
     border: 0.1em solid var(--color-4);
+    border-radius: 0.5em;
 }
 
 .secondary-button {
@@ -541,6 +542,7 @@ footer {
 form .input-field {
     position: relative;
 }
+
 form .input-field input {
     width: 100%;
     padding: 10px 0;
@@ -566,13 +568,14 @@ form .input-field label {
     left: 0;
     transition: .5s;
 }
+
 /* form .input-field input:valid ~ label  */
-form .input-field input:focus ~ label
-{
-  top: -20px;
-  left: 0;
-  color: var(--color-3);
-  font-size: 1em;
+form .input-field input:focus~label,
+form .input-field input:valid~label {
+    top: -20px;
+    left: 0;
+    color: var(--color-3);
+    font-size: 1em;
 }
 
 /* Radio button */
@@ -586,17 +589,17 @@ form .input-field input:focus ~ label
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default radio button */
-  .radio-container input {
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
+}
+
+/* Create a custom radio button */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -604,36 +607,100 @@ form .input-field input:focus ~ label
     width: 1.2em;
     background-color: var(--color-3);
     border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .radio-container:hover input ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input~.checkmark {
     background-color: var(--color-1);
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .radio-container input:checked ~ .checkmark {
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked~.checkmark {
     background-color: var(--color-1);
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .radio-container input:checked ~ .checkmark:after {
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input~.checkmark:after {
     display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .radio-container .checkmark:after {
-       top: 0.3em;
-      left: 0.3em;
-      width: 0.6em;
-      height: 0.6em;
-      border-radius: 50%;
-      background: white;
-  }
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+    top: 0.3em;
+    left: 0.3em;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Offers */
+.offers-wrapper {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0em 1em 2px var(--color-1);
+    background-color: var(--color-2);
+    border: 0.1em solid var(--color-1);
+    flex-direction: column;
+    align-items: flex-end;
+    color: var(--color-4);
+    padding: 1em;
+    transition: 2s;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.close-offer-model{
+    color: var(--color-4);
+    float: right;
+    font-size: 2.5em;
+    width: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: -0.3em;
+    
+}
+.close-offer-model:hover{
+    cursor: pointer;
+}
+
+.offer-button{
+    display: none;
+}
+
+.offer-button:hover{
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+.offer-button i{
+    margin-left: 0.5em;
+}
+
+.offer-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.offer-heading i{
+    font-size: 2.5em;
+}
+
+.offer-title {
+    font-size: 1.3em;
+    margin: 0.5em 0;
+}
+.offer-details{
+    display: flex;
+    flex-direction: column;
+}

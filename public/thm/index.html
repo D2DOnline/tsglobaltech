@@ -213,7 +213,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close-booknow-model">&times;</span>
+          <span class="modal-close-button close-booknow-model">&times;</span>
           <div class="model-title">Book Your Stay</div>
         </div>
         <div class="modal-body">
@@ -304,17 +304,17 @@
       <!-- Modal content -->
       <div class="modal-content">
         <div class="modal-header">
-          <span class="close-sign-in-model">&times;</span>
+          <span class="modal-close-button close-sign-in-model">&times;</span>
           <div class="model-title">Sign In</div>
         </div>
         <div class="modal-body">
           <form>
             <div class="input-field">
-              <input class="form-input" type="text" autofocus/>
-              <label class="field-label">User Id</label>
+              <input class="form-input" type="text" required/>
+              <label class="field-label" >User Id</label>
             </div>
             <div class="input-field">
-              <input class="form-input" type="password" />
+              <input class="form-input" type="password" required/>
               <label class="field-label">Password</label>
             </div>
             <div class="form-field signin-as">
@@ -345,6 +345,22 @@
         </button>
       </div>
     </div> <!-- End Booknow-lg-->
+
+    <div class="offers-wrapper">
+      
+      <div class="offer-button" id="offersButton" onclick=showOffers()>
+        <span>Offers</span>
+        <i class="fa fa-angle-up"></i>
+      </div>
+      <div class="offer-details" id="offersDetails">
+        <div class="offer-heading">
+          <i class="fa fa-gift"></i>
+          <div class="close-offer-model" onclick=hideOffers()>&times;</div>
+        </div>
+        <div class="offer-title">25% Room discount</div>
+        <p>Book now and avail 25% flat discount on room booking</p>
+      </div>
+    </div>
 
   </div>
 

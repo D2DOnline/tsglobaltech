@@ -6,6 +6,16 @@ function closeNav() {
   document.getElementById("sidenav").style.width = "0";
 }
 
+function hideOffers(){
+  document.getElementById("offersDetails").style.display = "none";
+  document.getElementById("offersButton").style.display = "flex";
+}
+
+function showOffers(){
+  document.getElementById("offersDetails").style.display = "flex";
+  document.getElementById("offersButton").style.display = "none";
+}
+
 function openDialer() {
   try {
     window.open("tel: +917838863462", "_blank");
